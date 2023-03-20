@@ -1,5 +1,3 @@
-# ELC1067 - Laboratório de Programação II
-
 Professor: [João Vicente Ferreira Lima](http://www.inf.ufsm.br/~jvlima)
 
 Contato: jvlima em inf.ufsm.br ou CT/UFSM sala 380 Anexo B.
@@ -17,6 +15,18 @@ Calendário UFSM: https://www.ufsm.br/calendario/
 ## Sobre a disciplina
 
 O objetivo da disciplina de Laboratório de Programação II é utilizar as principais estruturas de dados para solucionar problemas ligados à Computação.
+
+## Material de apoio
+
+- GDB [link 1](http://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf), [link 2](https://www.cs.cmu.edu/~gilpin/tutorial/), [link 3](http://www.lrc.ic.unicamp.br/~luciano/courses/mc202-2s2009/tutorial_gdb.txt). Ou a versão gráfica [DDD](https://www.gnu.org/software/ddd/)
+- Valgrind [link 1](http://valgrind.org/docs/manual/quick-start.html), [link 2](https://web.stanford.edu/class/cs107/guide_valgrind.html)
+- [GitHub Handbook](https://guides.github.com/introduction/git-handbook/)
+- [Git Cheat Sheets](https://github.github.com/training-kit/)
+- [Tech Talk: Linux Tolvards on Git](http://youtu.be/4XpnKHJAok8)
+- [Introduction to Git with Scott Chacon of GitHub](https://youtu.be/ZDR433b0HJY)
+- Cormen, Algoritmos: teoria e prática, 3o edição. ([notas 2008](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/lecture-notes/), [notas 2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/))
+- Sedgewick, Algorithms, 4th edition. ([slides](http://algs4.cs.princeton.edu/lectures/))
+
 
 ## Aulas e trabalhos
 
@@ -58,13 +68,3 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | - | 2022-07-13 Qui   | **Sem aula** (Sábado)  |
 | - | 2023-07-18 Ter | **Avaliações Finais** |
 
-## Material de apoio
-
-- GDB [link 1](http://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf), [link 2](https://www.cs.cmu.edu/~gilpin/tutorial/), [link 3](http://www.lrc.ic.unicamp.br/~luciano/courses/mc202-2s2009/tutorial_gdb.txt). Ou a versão gráfica [DDD](https://www.gnu.org/software/ddd/)
-- Valgrind [link 1](http://valgrind.org/docs/manual/quick-start.html), [link 2](https://web.stanford.edu/class/cs107/guide_valgrind.html)
-- [GitHub Handbook](https://guides.github.com/introduction/git-handbook/)
-- [Git Cheat Sheets](https://github.github.com/training-kit/)
-- [Tech Talk: Linux Tolvards on Git](http://youtu.be/4XpnKHJAok8)
-- [Introduction to Git with Scott Chacon of GitHub](https://youtu.be/ZDR433b0HJY)
-- Cormen, Algoritmos: teoria e prática, 3o edição. ([notas 2008](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/lecture-notes/), [notas 2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/))
-- Sedgewick, Algorithms, 4th edition. ([slides](http://algs4.cs.princeton.edu/lectures/))
