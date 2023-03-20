@@ -40,7 +40,7 @@ ser mais eficiente que o GCC.
 Para ler os parâmetros da linha de comando, use os parâmetros da ```main```
 ```argc``` e ```argv```.  O exemplo abaixo imprime todos os parâmetros passados:
 
-```C++
+```c++
 #include <iostream>
 
 // argc é o número de parâmetros passados
@@ -62,7 +62,7 @@ Declarações em C++ são semelhantes em C, com algumas melhorias.
 ### auto
 
 Pode-se usar ```auto``` quando o tipo é deduzido pelo compilador como em:
-```C++
+```c++
 auto x = 1;          // inteiro
 auto y = 2.0;        // double
 auto teste = true;   // booleano
@@ -74,7 +74,7 @@ for(auto i= 0; i < 10; i++)
 ### Inicialização padrão
 É uma forma de padronizar a inicialização de variáveis em C++ usando
 ```{}```.  Por exemplo:
-```C++
+```c++
 double x {1.0};                 // declara um double
 int    a[] {1, 2, 3, 4};        // vetor com 4 elementos sem = 
 int    b[] = {1, 2, 3, 4};      // mesma coisa
@@ -95,7 +95,7 @@ ou ```double*``` para ```int*```.
   tempo de execução.
 
 Alguns exemplos:
-```C++
+```c++
 int num = 97;                        // inteiro
 char letra = static_cast<char>(num); // agora letra A
 
@@ -110,7 +110,7 @@ Passagem por referência possibilita passar variáveis por
 *referência* ao invés de valor ou ponteiro.
 No exemplo abaixo, tem-se a opção de valor e referência ```&```:
 
-```C++
+```c++
 void f(int val, int& ref)
 {
     val++;   // incrementa a cópia local de val
@@ -122,7 +122,7 @@ void f(int val, int& ref)
 mais difícil de entender.  Use apenas quando queremos evitar uma cópia
 e não vamos alterar a variável (```const```), como por exemplo um vetor ou
 uma string:
-```C++
+```c++
 void imprimir(const std::string& texto) 
 {
     std::cout << texto << std::endl; // não altera variável
@@ -141,7 +141,7 @@ C para desta disciplina (*eu acho*):
   estrutura.
 
 Veja o exemplo:
-```C++
+```c++
 #include <iostream>
 #include <cmath>
 
@@ -177,7 +177,7 @@ Temos duas funções da estrutura ```Ponto```: ```zera()``` e ```distancia()```.
 são da estrutura e manipulam ```(x,y)``` de cada variável.
 
 Note que foi utilizada a inicialização padrão, iniciando os campos de ```Ponto``` em ordem:
-```C++
+```c++
 Ponto p1 {1.0, 1.0};
 ```
 
@@ -190,7 +190,7 @@ ou escritos em sequência. Para tanto, C++ tem os streamings:
 
 Neste exemplo são lidos dois números (```>>```) e escritos dois (```<<```).  Note
 que a operação de *saída* é ```<<``` (esquerda) e *entrada* é ```>>``` (direita).
-```C++
+```c++
 #include <iostream>
 #include <fstream>
 
@@ -206,7 +206,7 @@ int main(void)
 ```
 Se queremos ler ```n``` números, precisamos testar se o arquivo terminou
 ou *end-of-file* (EOF). Basta usar a função ```eof()```:
-```C++
+```c++
 #include <iostream>
 #include <fstream>
 
@@ -235,7 +235,7 @@ podemos usar  ```std::getline``` que lê tudo até o final da linha em
 uma ```std::string```. 
 Nesse exemplo, usa-se a função para ler matrícula e nome de um aluno
 do arquivo ```alunos.txt```:
-```C++
+```c++
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -270,7 +270,7 @@ exceção ou erro em tempo de execução.
 Uma  exceção padrão é a ```std::runtime_error```.
 
 Um exemplo é um programa que só aceita números positivos:
-```C++
+```c++
 #include <iostream>
 
 int main(void)
@@ -288,7 +288,7 @@ int main(void)
 Tratar exceções depende da estrutura ```try/catch```, onde
 o bloco ```try```  é o código protegido e ```catch``` é executado
 somente quando ocorrer uma exceção.
-```C++
+```c++
 #include <iostream>
 
 int main(void)
@@ -308,7 +308,7 @@ int main(void)
 ### New e delete
 A linguagem oferece a função ```new``` e ```delete``` para alocar e
 liberar memória, respectivamente.
-```C++
+```c++
 int* ptr1 = nullptr;       // nullptr é NULL em C++
 int* ptr2 {nullptr};       // inicializador padrão
 
@@ -330,7 +330,7 @@ Basta um vetor de ponteiros (```int**```) com cada posição um vetor (```int*``
 
 No exemplo abaixo, qualquer outro tipo pode ser usando trocando ```int``` por 
 outro tipo.
-```C++
+```c++
 int** matriz {nullptr};
 int N = 10;
 matriz = new int*[N];        // vetor com ponteiros
@@ -355,7 +355,7 @@ automaticamente quando o programa não usa mais.
 
 Nós veremos o uso dos ponteiros ```unique_ptr```, que armazena 
 um ponteiro em modo exclusivo (único dono).
-```C++
+```c++
 #include <iostream>
 #include <memory>
 
@@ -375,7 +375,7 @@ int main(void)
 ```
 
 Pode-se também retornar um ```unique_ptr``` de uma função:
-```C++
+```c++
 #include <iostream>
 #include <memory>
 
@@ -400,7 +400,7 @@ int main(void)
 Porém, *```unique_ptr``` não suporta operação de cópia* de variável porque o
 acesso é modo exclusivo, ou seja, único dono.  C++11 proporciona o
 ```operador move``` que move o conteúdo ao invés de copiar:
-```C++
+```c++
 auto ptr1 = std::unique_ptr<int> {new int};         // aloca ponteiro int
 auto copia = std::move(ptr1);                       // move para copia
 std::cout << "Ptr1: " << ptr1.get() << std::endl;   // saída: 0x0 (nullptr)
@@ -413,7 +413,7 @@ Como dito anteriormente, C++11 proporciona o *operador move* que move o
 conteúdo ao invés de copiar e deixa a estrutura antiga (*objeto*) vazio.
 Este exemplo mostra como funciona ao mover uma ```string``` usando
 ```std::move```:
-```C++
+```c++
 std::string str1 {"Texto"};                    // cria string
 std::string copia = std::move(str1);           // move para copia
 std::cout << "String 1: " << str1 << std::endl; // saida vazia
@@ -427,7 +427,7 @@ funções ou estruturas que comportam-se da mesma forma.  Será uma das
 formas usadas aqui para construir TADs (*tipos abstratos de dados*).
 
 Considere uma função que retorna o elemento maior entre ```x``` e ```y```, podemos descrever com templates:
-```C++
+```c++
 template<typename T>
 void max(T x, T y)
 {
@@ -443,7 +443,7 @@ função, ou estrutura.  Então, toda vez que nos referimos a ```T```, ele é
 substituido pelo tipo usado.
 
 No caso de uma estrutura com template:
-```C++
+```c++
 template<typename T>
 struct Ponto {
     T x;
@@ -462,7 +462,7 @@ como parâmetro.
 Dicas sobre templates: https://isocpp.org/wiki/faq/templates
 
 ## Números aleatórios
-```C++
+```c++
 #include <iostream>
 #include <random>
 #include <functional>
@@ -485,7 +485,7 @@ int main(void)
 ```
 
 ## Tempo
-```C++
+```c++
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -511,7 +511,7 @@ Namespaces em C++ criam *escopos nomeados* e aumenta a modularidade do
 código.  A ```std``` é o namespace padrão do C++.
 
 No exemplo abaixo, definimos um namespace com uma função e uso:
-```C++
+```c++
 namespace Uteis {
     void foo(void) {
         std::cout << "Funcao foo aqui" << std::endl;
@@ -529,7 +529,7 @@ TODO
 ### Lista
 A ```std::list``` é uma lista que suporta inserção e remoção de elementos de
 qualquer lugar em tempo constante.
-```C++
+```c++
 #include <iostream>
 #include <list>
 #include <random>
