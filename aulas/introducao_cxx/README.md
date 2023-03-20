@@ -7,7 +7,7 @@ O objetivo desta página é mostrar os principais conceitos de C++ que o diferem
 
 ## Olá mundo
 
-```C++
+```c++
 #include <iostream>
 
 int main(void)
