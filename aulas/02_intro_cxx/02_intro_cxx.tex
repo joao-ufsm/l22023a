@@ -1,5 +1,5 @@
 
-\documentclass[xcolor={usenames,dvipsnames},10pt,compress,aspectratio=169]{beamer}
+\documentclass[xcolor={usenames,dvipsnames},10pt,presentation,aspectratio=169]{beamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
@@ -30,6 +30,7 @@
 %\usecolortheme{beaver}
 %\usecolortheme{seahorse}
 %\usecolortheme{seagull}
+\usecolortheme[named=BrickRed]{structure}
 
 \setbeamercovered{transparent}
 
@@ -97,10 +98,20 @@
 
 \author[João V. F. Lima]{\nome}
 
-\institute[UFSM]{Departamento de Linguagens e Sistemas de Computação \\ Universidade Federal de Santa Maria \\ \url{jvlima@inf.ufsm.br} \\ \url{http://www.inf.ufsm.br/~jvlima}}
-\date{2020/2}
+%\institute[UFSM]{Departamento de Linguagens e Sistemas de Computação \\ Universidade Federal de Santa Maria \\ \url{jvlima@inf.ufsm.br} \\ \url{http://www.inf.ufsm.br/~jvlima}}
+\institute[UFSM]{Universidade Federal de Santa Maria \\ \url{jvlima@inf.ufsm.br} \\ \url{http://www.inf.ufsm.br/~jvlima}}
+\date{2023/1}
 
 \graphicspath{{.}{figs/}}
+
+\logo{ \includegraphics[height=1.5cm,width=1.5cm,keepaspectratio]{logo_inf}    
+        \includegraphics[height=1.5cm,width=1.5cm,keepaspectratio]{logo_ufsm} }
+
+%\titlegraphic{
+%	\includegraphics[width=2cm]{logo_ufsm}
+%  \hspace{1cm}
+%	\includegraphics[width=2cm]{logo_inf}
+%}
 
 \newtheorem{mydef}{Definição}[section]
 %\newtheorem{myteo}{Teorema}[section]
@@ -172,18 +183,18 @@
 \begin{frame}
 %  \titlepage
   \maketitle
-  \mode<presentation>
-  {
-    \begin{columns}
-      \begin{column}{0.5\textwidth}
-      \raggedleft
-	\includegraphics[width=2cm]{logo_ufsm}
-      \end{column}
-      \begin{column}{0.5\textwidth}
-	\includegraphics[width=2cm]{logo_inf}
-      \end{column}
-    \end{columns}
-  }
+%  \mode<presentation>
+%  {
+%    \begin{columns}
+%      \begin{column}{0.5\textwidth}
+%      \raggedleft
+%	\includegraphics[width=2cm]{logo_ufsm}
+%      \end{column}
+%      \begin{column}{0.5\textwidth}
+%	\includegraphics[width=2cm]{logo_inf}
+%      \end{column}
+%    \end{columns}
+%  }
 \end{frame}
 
 \begin{frame}
@@ -241,10 +252,16 @@ int main(void)
 \end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Compilação}
-\begin{exampleblock}{Linha de comando}
+  \frametitle{Compilador}
+\begin{exampleblock}{Instalação do GCC em sistemas Debian/Ubuntu}
 \begin{lstlisting}
-$ g++ -std=c++11 -O2 -Wall -g  -o ola ola.cpp
+$ apt install gcc g++
+\end{lstlisting}
+\end{exampleblock}
+%
+\begin{exampleblock}{Instalar ferramentas essenciais}
+\begin{lstlisting}
+$ apt install make valgrind gdb cppcheck 
 \end{lstlisting}
 \end{exampleblock}
 %
@@ -254,6 +271,23 @@ Semelhante ao C, pode-se usar o \textbf{GCC} (\texttt{g++}) e \textbf{Clang}
 Clang mostra erros de compilação de forma mais amigável, além de ser mais 
 eficiente que o GCC.
 \end{alertblock}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Compilação}
+\begin{exampleblock}{Linha de comando}
+\begin{lstlisting}
+$ g++ -std=c++11 -O2 -Wall -g  -o ola ola.cpp
+$ ./ola
+\end{lstlisting}
+\end{exampleblock}
+%
+\begin{exampleblock}{Linha de comando (alternativa)}
+\begin{lstlisting}
+$ g++ -std=c++11 -O2 -Wall -g ola.cpp
+$ ./a.out
+\end{lstlisting}
+\end{exampleblock}
 \end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}[fragile]
@@ -521,6 +555,18 @@ namespace Uteis {
 Uteis::foo();
 \end{lstlisting}
   \end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[plain]{}
+  \begin{center}
+    \vspace{2cm}
+    \Large{https://joao-ufsm.github.io/l22023a/}
+    
+    \vspace{1cm}
+    \includegraphics[width=2cm]{logo_ufsm}
+    \hspace{0.5cm}
+    \includegraphics[width=2cm]{logo_inf}
+  \end{center}
 \end{frame}
 %------------------------------------------------------------------------------
 
