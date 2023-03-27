@@ -123,15 +123,15 @@
 \lstset{
   language=C++,
   %basicstyle=\scriptsize\ttfamily,
-  basicstyle=\normalsize\ttfamily,
-  %basicstyle=\small\ttfamily,
+  %basicstyle=\normalsize\ttfamily,
+  basicstyle=\small\ttfamily,
   %basicstyle=\footnotesize\ttfamily,
   aboveskip=0pt,
   belowskip=0pt,
   mathescape=false,
   columns=flexible,
-%  numbers=none,
-  numbers=left,
+  numbers=none,
+%  numbers=left,
 %  showtabs=true,
 %  showspaces=true,
   breaklines=true
@@ -210,10 +210,85 @@
   \end{frame}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introdução}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Unix history}
+UNIX was written in assembly by Ken Thompson at Bell Labs (AT\&T) in
+1969 for a Digital PDP-7 minicomputer. It took several ideias from
+MULTICS such as:
+\begin{columns}\begin{column}{0.7\textwidth}
+  \begin{itemize}
+    \item tree-structured file system.
+    \item separate program for interpreting commands (shell).
+    \item notion of files as unstructured streams of bytes.
+  \end{itemize}
+\end{column}\begin{column}{0.3\textwidth}
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{ken_denis}
+\end{center}
+\end{column}\end{columns}
 
+Denis Ritchie designed and implemented C language between 1969-1973
+at Bell Labs. By 1973, UNIX was almost totally written in C.
+\begin{block}{C for system programming}
+In the 70s, widely used languages were designed to other purposes:
+  \begin{itemize}
+    \item FORTRAN for mathematical tasks
+    \item COBOL for commercial systems 
+  \end{itemize}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Visão de computador}
+    \begin{columns}
+      \begin{column}{0.4\textwidth}
+      \raggedleft
+        O \textbf{sistema operacional} e as \textbf{linguagens de programação} criam uma interface ao computador
+     \end{column}
+      \begin{column}{0.6\textwidth}
+  \begin{center}
+	\includegraphics[width=0.8\textwidth]{vm.png}
+  \end{center}
+      \end{column}
+    \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{História do C++}
+    \begin{columns}
+      \begin{column}{0.7\textwidth}
+        \begin{itemize}
+          \item Criada
+        \end{itemize}
+     \end{column}
+      \begin{column}{0.3\textwidth}
+  \begin{center}
+	\includegraphics[width=0.8\textwidth]{4thEnglish.jpeg}
+  \end{center}
+      \end{column}
+    \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{História do C++}
+  \begin{center}
+	\includegraphics[width=0.8\textwidth]{roots_cpp.png}
+  \end{center}
+  {\footnotesize Bjarne Stroustrup, \emph{The Evolution of C++: Past, Present, and Future}, CppCon 2016 \\ \url{https://youtu.be/\_wzc7a3McOs}}
+\end{frame}
+%------------------------------------------------------------------------------
+% TODO: timeline, success, usage, timeline do livro, excessao, etc
+%\begin{frame}
+%  \frametitle{Entrada e saída}
+%  \begin{itemize}
+%  \item 
+%  \end{itemize}
+%\end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{Compilação de programas}
@@ -245,7 +320,6 @@
   \end{center}
 \end{frame}
 %------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
 %\begin{frame}
 %  \frametitle{Entrada e saída}
 %  \begin{itemize}
@@ -257,6 +331,17 @@
 \begin{frame}[fragile]
   \frametitle{Olá mundo}
   \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+          \begin{itemize}
+          \item \textbf{iostream} para entrada e saída básica.
+          \item \textbf{std::string} é uma estrutura (``classe'') C++ para string.
+          \item \textbf{std::cout} é a saída padrão.
+          \item \textbf{std::endl} é uma nova linha (\texttt{\char`\\n}).
+          \end{itemize}
+     \end{column}
+      \begin{column}{0.5\textwidth}
+%      \begin{center}
   \begin{block}{ola.cpp}
 \begin{lstlisting}
 #include <iostream>
@@ -270,15 +355,10 @@ int main(void)
 }
 \end{lstlisting}
 \end{block}
+%      \end{center}
+      \end{column}
+    \end{columns}
 %
-\begin{exampleblock}{Comentários}
-\begin{itemize}
-\item \textbf{iostream} para entrada e saída básica.
-\item \textbf{std::string} é uma estrutura (``classe'') C++ para string.
-\item \textbf{std::cout} é a saída padrão.
-\item \textbf{std::endl} é uma nova linha (\texttt{\char`\\n}).
-\end{itemize}
-\end{exampleblock}
 %
 \end{frame}
 %------------------------------------------------------------------------------
@@ -586,6 +666,13 @@ namespace Uteis {
 Uteis::foo();
 \end{lstlisting}
   \end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Exceções}
+  \begin{itemize}
+  \item a
+  \end{itemize}
 \end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}[plain]{}
