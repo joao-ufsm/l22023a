@@ -215,6 +215,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Compilação de programas}
+  \begin{center}
+  \begin{tikzpicture}[block/.style={
+      draw,
+      shape=rectangle,
+      align=center,
+      node distance=3cm,
+      black,
+      very thick
+    }
+    ]
+    %\draw (0,0) node [draw, black, very thick] {Código};
+    %\draw (0,0) node {A} -> (1,0) node {B};
+    %\draw[->] 0,
+    \node[block] (A) at (0,0) {\textsc{Código C++}};
+    \node[block,right of=A] (B) {\textsc{Compilador}};
+    \node[block,right of=B] (F) {\textsc{Código objeto}};
+    \node[block,right of=F] (C) {\textsc{Ligador}};
+    \node[block,right of=C] (D) {\textsc{Executável}};
+    \node[block,below of=C] (E) {\textsc{Bibliotecas (DLLs, so)}};
+    \draw[->,very thick] (A) -- (B);
+    \draw[->,very thick] (B) -- (F);
+    \draw[->,very thick] (F) -- (C);
+    \draw[->,very thick] (C) -- (D);
+    \draw[->,very thick] (E) -- (C);
+  \end{tikzpicture}
+  \end{center}
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %\begin{frame}
 %  \frametitle{Entrada e saída}
 %  \begin{itemize}
