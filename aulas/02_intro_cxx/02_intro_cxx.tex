@@ -242,7 +242,6 @@ In the 70s, widely used languages were designed to other purposes:
 \end{block}
 \end{frame}
 %------------------------------------------------------------------------------
-%------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{Visão de computador}
     \begin{columns}
@@ -263,7 +262,12 @@ In the 70s, widely used languages were designed to other purposes:
     \begin{columns}
       \begin{column}{0.7\textwidth}
         \begin{itemize}
-          \item Criada
+          \item Criado em 1979 como \emph{C with Classes} por Bjarne Stroustrup
+          \item C++ é compatível com C
+          \item Abstrações sem comprometer o desempenho 
+          \item 1985: primeira edição do livro \emph{The C++ Programming Language}
+          \item 1994: STL (\emph{Standard Template Library}) por Alexander Stepanov
+          \item 1998: ISO C++ standard.
         \end{itemize}
      \end{column}
       \begin{column}{0.3\textwidth}
@@ -282,13 +286,39 @@ In the 70s, widely used languages were designed to other purposes:
   {\footnotesize Bjarne Stroustrup, \emph{The Evolution of C++: Past, Present, and Future}, CppCon 2016 \\ \url{https://youtu.be/\_wzc7a3McOs}}
 \end{frame}
 %------------------------------------------------------------------------------
-% TODO: timeline, success, usage, timeline do livro, excessao, etc
+\begin{frame}
+  \frametitle{História do C++}
+  \begin{center}
+	\includegraphics[width=0.8\textwidth]{cpptimeline.png}
+  \end{center}
+  {\footnotesize Bjarne Stroustrup, \emph{The Evolution of C++: Past, Present, and Future}, CppCon 2016 \\ \url{https://youtu.be/\_wzc7a3McOs}}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{História do C++}
+  \begin{center}
+	\includegraphics[width=0.8\textwidth]{cppsuccess.png}
+  \end{center}
+  {\footnotesize Bjarne Stroustrup, \emph{The Evolution of C++: Past, Present, and Future}, CppCon 2016 \\ \url{https://youtu.be/\_wzc7a3McOs}}
+\end{frame}
+%------------------------------------------------------------------------------
+% TODO: excessao, etc
 %\begin{frame}
 %  \frametitle{Entrada e saída}
 %  \begin{itemize}
 %  \item 
 %  \end{itemize}
 %\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Stack Overflow}
+  \vspace{-2mm}
+  \begin{center}
+	\includegraphics[width=0.7\textwidth]{stackoverflow.png}
+  \end{center}
+  \vspace{-7mm}
+  {\footnotesize Fonte: \url{https://insights.stackoverflow.com/}}
+\end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{Compilação de programas}
@@ -337,7 +367,11 @@ In the 70s, widely used languages were designed to other purposes:
           \item \textbf{iostream} para entrada e saída básica.
           \item \textbf{std::string} é uma estrutura (``classe'') C++ para string.
           \item \textbf{std::cout} é a saída padrão.
-          \item \textbf{std::endl} é uma nova linha (\texttt{\char`\\n}).
+          \item \textbf{std::endl} é uma nova linha 
+            \begin{itemize}
+              \item UNIX/Linux - \texttt{\char`\\n}
+              \item Windows - \texttt{\char`\\r\char`\\n}
+            \end{itemize}
           \end{itemize}
      \end{column}
       \begin{column}{0.5\textwidth}
@@ -558,6 +592,118 @@ int main(void)
 \end{frame}
 %------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Containers STL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Containers STL}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        A C++ STL (\emph{Standard Template Library}) consiste em iteradores,
+        containers (ou TADs), algoritmos, e funções parte da bibliteca padrão
+        do C++.
+     \end{column}
+      \begin{column}{0.5\textwidth}
+%      \begin{center}
+  \begin{block}{Vetores C++}
+\begin{lstlisting}
+std::vector<int> v1 = {1, 2, 3, 4};
+std::vector<char> v2;
+
+// insere no fim
+v1.push_back(5);
+
+// insere no comeco
+v1.push_front(0);
+
+// imprime
+std::cout << v1[3] << std::endl;
+
+// insere um caractere
+v2.push_back('a');
+\end{lstlisting}
+\end{block}
+      \end{column}
+    \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Containers STL}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        Iteradores são ``ponteiros'' ou ``cursores'' genéricos aos dados dentro de um container.
+
+        Os containers possuem os métodos:
+        \begin{itemize}
+           \item \texttt{begin()} para começo.
+           \item \texttt{end()} para o fim (ou além dele). 
+           \item \texttt{last()} para o último elemento.
+          \item \texttt{size()} número de elementos.
+          \item \texttt{capacity()} capacidade total em memória.
+          \item \texttt{clear()} ``limpa'' o container.
+        \end{itemize}
+        O iterador tem o operador \texttt{*} para acessar o elemento apontado.
+     \end{column}
+      \begin{column}{0.5\textwidth}
+\begin{block}{Vetores C++}
+\begin{lstlisting}
+std::vector<int> v1 = {1, 2, 3, 4};
+
+for(auto it= v1.begin(); it != v1.end(); it++)
+  std::cout << *it;
+
+std::vector<int>::iterator it;
+for(it= v1.begin(); it != v1.end(); it++)
+  std::cout << *it;
+\end{lstlisting}
+\end{block}
+      \begin{center}
+      \includegraphics[width=\textwidth]{iterator.png}
+      \end{center}
+      \end{column}
+    \end{columns}
+  \onslide<2->
+  \begin{center}
+  \alert{\large \textbf{Tem como alterar os valores?}}
+  \end{center}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Containers STL}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        Iteradores são ``ponteiros'' ou ``cursores'' genéricos aos dados dentro de um container.
+
+        Os containers possuem os métodos:
+        \begin{itemize}
+           \item \texttt{begin()} para começo.
+           \item \texttt{end()} para o fim (ou além dele). 
+           \item \texttt{last()} para o último elemento.
+          \item \texttt{size()} número de elementos.
+          \item \texttt{capacity()} capacidade total em memória.
+          \item \texttt{clear()} ``limpa'' o container.
+        \end{itemize}
+        O iterador tem o operador \texttt{*} para acessar o elemento apontado.
+     \end{column}
+      \begin{column}{0.5\textwidth}
+\begin{block}{Vetores C++}
+\begin{lstlisting}
+std::vector<int> v1 = {1, 2, 3, 4};
+
+for(auto it= v1.begin(); it != v1.end(); it++)
+  *it = *it + 1;
+\end{lstlisting}
+\end{block}
+      \end{column}
+    \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Entrada e saída}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %------------------------------------------------------------------------------
@@ -650,29 +796,141 @@ int main(void)
   \end{block}
 \end{frame}
 %------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Escopos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
 \begin{frame}[fragile]
   \frametitle{Namespaces}
-Namespaces em C++ criam \textbf{escopos nomeados}  e aumenta a modularidade do código.
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.4\textwidth}
+Namespaces em C++ são \textbf{escopos nomeados}  e aumenta a modularidade do código.
 A \verb+std+ é o namespace padrão do C++.
-  \begin{block}{Exemplo}
+     \end{column}
+      \begin{column}{0.6\textwidth}
+%      \begin{center}
+  \begin{block}{}
+\begin{lstlisting}
+#include <iostream>
+
+int main(void)
+{
+  std::string mensagem{"Ola mundo!"}
+  std::cout << << mensagem << std::endl;
+  return 0;
+}
+\end{lstlisting}
+\end{block}
+%      \end{center}
+      \end{column}
+    \end{columns}
+%
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Namespaces}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.4\textwidth}
+        Pode-se criar novos escopos para bibliotecas ou versões de software.
+     \end{column}
+      \begin{column}{0.6\textwidth}
+%      \begin{center}
+  \begin{block}{}
 \begin{lstlisting}
 namespace Uteis {
-    void foo(void) {
-        std::cout << "Funcao foo aqui" << std::endl;
+  void foo(void) {
+    std::cout << "Funcao foo aqui" << std::endl;
     }
 }
 
 // usando a funcao assim
 Uteis::foo();
 \end{lstlisting}
-  \end{block}
+\end{block}
+%      \end{center}
+      \end{column}
+    \end{columns}
+%
 \end{frame}
 %------------------------------------------------------------------------------
-\begin{frame}
-  \frametitle{Exceções}
-  \begin{itemize}
-  \item a
-  \end{itemize}
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tratamento de erros}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Tratamento de erros}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.4\textwidth}
+          \begin{itemize}
+            \item C++ permite o tratamento de erros em tempo de execução com \textbf{exceptions}.
+            \item A palavra chave \texttt{throw} cria um erro.
+          \end{itemize}
+     \end{column}
+      \begin{column}{0.6\textwidth}
+%      \begin{center}
+  \begin{block}{}
+\begin{lstlisting}
+#include <iostream>
+
+int main(void)
+{
+    int n;
+    std::cout << "Digite um numero: ";
+    std::cin >> n;
+    if(n < 0)
+        throw std::runtime_error {"Digite apenas numeros positivos!"};
+    std::cout << n << std::endl;
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+%      \end{center}
+      \end{column}
+    \end{columns}
+%
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Tratamento de erros}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.4\textwidth}
+          \begin{itemize}
+            \item Tratar exceções depende da estrutura \texttt{try/catch}
+            \item O bloco \texttt{try} é o código protegido
+            \item \texttt{catch} é executado somente quando ocorrer uma exceção.
+          \end{itemize}
+     \end{column}
+      \begin{column}{0.6\textwidth}
+%      \begin{center}
+  \begin{block}{}
+\begin{lstlisting}
+#include <iostream>
+
+int main(void)
+{
+    try {
+      auto a = 33;
+      auto b = 0;
+      std::cout << "a/b =" << a/b << std::endl;
+    } catch(std::exception& e) {
+      std::cout << "ERRO: " << e.what(); 
+      throw; // recria
+    }
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+%      \end{center}
+      \end{column}
+    \end{columns}
+%
 \end{frame}
 %------------------------------------------------------------------------------
 \begin{frame}[plain]{}
