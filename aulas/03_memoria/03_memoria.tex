@@ -1,5 +1,5 @@
 
-\documentclass[xcolor={usenames,dvipsnames},10pt,compress,aspectratio=169]{beamer}
+\documentclass[xcolor={usenames,dvipsnames},12pt,presentation,aspectratio=169]{beamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
@@ -30,6 +30,7 @@
 %\usecolortheme{beaver}
 %\usecolortheme{seahorse}
 %\usecolortheme{seagull}
+\usecolortheme[named=BrickRed]{structure}
 
 \setbeamercovered{transparent}
 
@@ -98,9 +99,13 @@
 \author[João V. F. Lima]{\nome}
 
 \institute[UFSM]{Departamento de Linguagens e Sistemas de Computação \\ Universidade Federal de Santa Maria \\ \url{jvlima@inf.ufsm.br} \\ \url{http://www.inf.ufsm.br/~jvlima}}
-\date{2020/2}
+\date{2023/1}
 
 \graphicspath{{.}{figs/}}
+
+\logo{ \includegraphics[height=1.5cm,width=1.5cm,keepaspectratio]{logo_inf}    
+        \includegraphics[height=1.5cm,width=1.5cm,keepaspectratio]{logo_ufsm} }
+
 
 \newtheorem{mydef}{Definição}[section]
 %\newtheorem{myteo}{Teorema}[section]
@@ -112,8 +117,8 @@
 \lstset{
   language=C++,
   %basicstyle=\scriptsize\ttfamily,
-  basicstyle=\normalsize\ttfamily,
-  %basicstyle=\small\ttfamily,
+ % basicstyle=\normalsize\ttfamily,
+  basicstyle=\small\ttfamily,
   %basicstyle=\footnotesize\ttfamily,
   aboveskip=0pt,
   belowskip=0pt,
@@ -172,18 +177,18 @@
 \begin{frame}
 %  \titlepage
   \maketitle
-  \mode<presentation>
-  {
-    \begin{columns}
-      \begin{column}{0.5\textwidth}
-      \raggedleft
-	\includegraphics[width=2cm]{logo_ufsm}
-      \end{column}
-      \begin{column}{0.5\textwidth}
-	\includegraphics[width=2cm]{logo_inf}
-      \end{column}
-    \end{columns}
-  }
+ % \mode<presentation>
+ % {
+ %   \begin{columns}
+ %     \begin{column}{0.5\textwidth}
+ %     \raggedleft
+ % \includegraphics[width=2cm]{logo_ufsm}
+ %     \end{column}
+ %     \begin{column}{0.5\textwidth}
+ % \includegraphics[width=2cm]{logo_inf}
+ %     \end{column}
+ %   \end{columns}
+ % }
 \end{frame}
 
 \begin{frame}
@@ -202,6 +207,100 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Alocação de memória}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Layout de memória}
+  \vspace{-3mm}
+    \begin{columns}
+     \begin{column}{0.7\textwidth}
+    \begin{itemize}
+        \item A alocação de memória é sempre contígua, tanto estático quanto dinâmico.
+        \item \texttt{text} é o código da aplicação.
+        \item A \textbf{pilha} (\emph{stack}) cresce do fim para o começo.
+            \begin{itemize}
+                \item Armazena variáveis locais
+            \end{itemize}
+        \item O \textbf{heap} cresce do começo ao fim.
+            \begin{itemize}
+                \item  Memória alocada dinamicamente
+            \end{itemize}
+    \end{itemize}
+     \end{column}
+      \begin{column}{0.3\textwidth}
+  \begin{center}
+	\includegraphics[width=\textwidth]{memory_layout.png}
+  \end{center}
+      \end{column}
+    \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Layout de memória}
+  \begin{columns}
+    \begin{column}{\textwidth}
+      \begin{center}
+    \includegraphics[width=\textwidth]{gcc.png}
+      \end{center}
+    \end{column}
+  \end{columns}
+  {\footnotesize \url{https://godbolt.org/z/envYnj8E9}}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Alocação de memória}
+  \vspace{-2mm}
+    \begin{columns}
+      \begin{column}{0.55\textwidth}
+\begin{block}{C}
+\begin{lstlisting}
+int *p = NULL;
+p = (int*) malloc( sizeof(int)*10 );
+
+*p = 1;
+p[1] = 2;
+*(p+2) = 3;
+
+free( (void*)p );
+\end{lstlisting}
+\end{block}
+     \end{column}
+      \begin{column}{0.35\textwidth}
+%      \begin{center}
+  \begin{block}{C++}
+\begin{lstlisting}
+int *p = nullptr;
+p = new int[10]
+
+*p = 1;
+p[1] = 2;
+*(p+2) = 3;
+
+delete[] p;
+\end{lstlisting}
+\end{block}
+      \end{column}
+    \end{columns}
+  \onslide<2->
+  \begin{center}
+  \alert{\large \textbf{C++ não tem realloc}}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ponteiros}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Ponteiros}
+  \begin{columns}
+    \begin{column}{\textwidth}
+      \begin{center}
+    \includegraphics[width=0.8\textwidth]{c_pointer.png}
+      \end{center}
+    \end{column}
+  \end{columns}
+  {\footnotesize \url{https://www.w3resource.com/c-programming/c-pointer.php}}
+\end{frame}
+%------------------------------------------------------------------------------
 \begin{frame}[fragile]
   \frametitle{Ponteiros}
   \begin{columns}
@@ -211,8 +310,8 @@
       \end{center}
     \end{column}
   \end{columns}
+  {\footnotesize \url{https://beginnersbook.com/2014/01/c-pointers/}}
 \end{frame}
-%------------------------------------------------------------------------------
 %------------------------------------------------------------------------------
 \begin{frame}[fragile]
   \frametitle{Matriz de caracteres}
@@ -259,7 +358,8 @@ delete[] vetor;
 
 \begin{frame}[fragile]
   \frametitle{Alocação de memória}
-  \begin{block}{New e delete}
+  \vspace{-4mm}
+  \begin{block}{}
 \begin{lstlisting}
 int** matriz {nullptr};
 int N = 10;
@@ -303,7 +403,7 @@ int main(void)
 %
   \begin{alertblock}{Execução}
 \begin{lstlisting}
-$ valgrind ./exemplo
+$ valgrind --leak-check=full ./exemplo
 \end{lstlisting}
 \end{alertblock}
 \end{frame}
@@ -335,9 +435,12 @@ ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 int main(void)
 {
     auto vetor = new int[100];
+
     for(auto i= 0; i < 100; i++)
         vetor[i] = 1;
+
     delete vetor;
+
     return 0;
 }
 \end{lstlisting}
@@ -377,8 +480,10 @@ LEAK SUMMARY:
 int main(void)
 {
     auto vetor = new int[100];
+
     for(auto i= 0; i < 100; i++)
         vetor[i] = 1;
+
     return 0;
 }
 \end{lstlisting}
@@ -403,20 +508,49 @@ LEAK SUMMARY:
 \end{block}
 \end{frame}
 %------------------------------------------------------------------------------
-\begin{frame}
-  \frametitle{}
-  \begin{center}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-    \raggedleft
-\includegraphics[width=4cm]{logo_ufsm}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-\includegraphics[width=4cm]{logo_inf}
-    \end{column}
-  \end{columns}
-\end{center}
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Exemplo com erro 3}
+\begin{lstlisting}
+int main(void)
+{
+    auto vetor = new int[100];
 
+    for(auto i= 0; i < 101; i++)
+        vetor[i] = 1;
+    
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+  \onslide<2->
+  \alert{\large \textbf{Causa segmentation fault?}}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Saída (erro 3)}
+\begin{lstlisting}
+==1651898== Invalid write of size 4
+==1651898==    at 0x109184: main (erro.cpp:5)
+==1651898==  Address 0x4dbfe10 is 0 bytes after a block of size 400 alloc'd
+==1651898==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1651898==    by 0x10915E: main (erro.cpp:3)
+\end{lstlisting}
+\end{block}
+  \alert{\large Causa segmentation fault? \textbf{Não!!!}}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[plain]{}
+  \begin{center}
+    \vspace{2cm}
+    \Large{https://joao-ufsm.github.io/l22023a/}
+    
+    \vspace{1cm}
+    \includegraphics[width=2cm]{logo_ufsm}
+    \hspace{0.5cm}
+    \includegraphics[width=2cm]{logo_inf}
+  \end{center}
 \end{frame}
 %------------------------------------------------------------------------------
 
