@@ -36,9 +36,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 |  2 | 2022-03-23 Qui   | [Suporte no Windows para C++](./aulas/08_windows) |
 |  3 | 2022-03-28 Ter   | [Introdução C++](./aulas/introducao_cxx) ([vídeo](https://youtu.be/pB-MdBKNpNo), [slides](./aulas/02_intro_cxx/02_intro_cxx.pdf)) |
 |  4 | 2022-03-30 Qui   | **[T1](./trabalhos/T1)**, Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
-|  5 | 2022-04-04 Ter   | T2 |
-|  6 | 2022-04-06 Qui   | [Listas em C++](./aulas/09_listas) |
-|  7 | 2022-04-11 Ter   |  |
+|  5 | 2022-04-04 Ter   | **[T2](./trabalhos/T2)** |
+|  6 | 2022-04-06 Qui   | **[T2](./trabalhos/T2)** |
+|  7 | 2022-04-11 Ter   | [Listas em C++](./aulas/09_listas) |
 |  8 | 2022-04-13 Qui   |  |
 |  9 | 2022-04-18 Ter   |  [Pilhas em C++](./aulas/13_pilhas) |
 | 10 | 2022-04-20 Qui   |  |
