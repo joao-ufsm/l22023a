@@ -53,7 +53,7 @@ $ ./t2 < campo.txt
 - O código abaixo é um exemplo de como converter `std:string` para `char*`
 
 
-```C++
+```c++
 #include <iostream>
 #include <string>
 #include <cstring>
