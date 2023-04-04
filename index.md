@@ -8,7 +8,7 @@ Ementa oficial: https://www.ufsm.br/ementario/disciplinas/ELC1067
 
 Horários: terças e quintas, 10:30 às 12:30.
 
-**Página do corretor:** https://l22023a.github.io/
+**Página do corretor:** [https://joao-ufsm.github.io/l22023a/resultados/](./resultados/)
 
 Calendário UFSM: https://www.ufsm.br/calendario/
 
