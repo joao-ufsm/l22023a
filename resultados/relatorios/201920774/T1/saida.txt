@@ -1,0 +1,4 @@
+escaleno
+equilátero
+inválido
+isósceles

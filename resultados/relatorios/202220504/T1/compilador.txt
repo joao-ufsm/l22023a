@@ -1,7 +1,7 @@
-t1.cpp: In function ‘int main()’:
-t1.cpp:18:33: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
-   18 |         }else if(lado1 == lado2 && lado1 != lado3 || lado1==lado3 && lado1 != lado2 || lado2 == lado3 && lado2 != lado1){
-      |                  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-t1.cpp:18:103: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
-   18 |         }else if(lado1 == lado2 && lado1 != lado3 || lado1==lado3 && lado1 != lado2 || lado2 == lado3 && lado2 != lado1){
-      |                                                                                        ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+t1 (2).cpp: In function ‘int main()’:
+t1 (2).cpp:18:33: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   18 |             } else if ((a == b) && (a != c) || (a == c) && (a != b) || (b == c) && (b != a)) {
+      |                        ~~~~~~~~~^~~~~~~~~~~
+t1 (2).cpp:18:81: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   18 |             } else if ((a == b) && (a != c) || (a == c) && (a != b) || (b == c) && (b != a)) {
+      |                                                                        ~~~~~~~~~^~~~~~~~~~~
