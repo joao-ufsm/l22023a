@@ -772,7 +772,7 @@ def testaReposAlunos(alunos, trab, file_html):
                 # inicio (dias de trabalho)
                 saida = testaAlunoDataInicio(a, "/")
                 table += " {0} | ".format(saida.strip())
-                table += "  |\n"
+                table += "\n"
         #table += "</table>"
         file_html.writelines(table) 
 
