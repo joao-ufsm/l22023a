@@ -1,0 +1,13 @@
+Quantos quadrados você desejar digitar? 
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 1
+Escanelo!
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 2
+Isósceles!
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 3
+Triângulo Invalido!
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 4
+Isósceles!
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 5
+Isósceles!
+Digite o ladoA, ladoB e ladoC separados por espaço do seu triângulo 6
+Isósceles!

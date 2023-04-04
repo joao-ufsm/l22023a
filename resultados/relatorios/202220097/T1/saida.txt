@@ -1,0 +1,15 @@
+Quantos triângulos você irá digitar? 
+Digite os lados do triângulo: 
+escaleno
+Digite os lados do triângulo: 
+isosceles
+Digite os lados do triângulo: 
+Triângulo inválido, digite novamente: 
+Digite os lados do triângulo: 
+isosceles
+Digite os lados do triângulo: 
+isosceles
+Digite os lados do triângulo: 
+isosceles
+Digite os lados do triângulo: 
+isosceles

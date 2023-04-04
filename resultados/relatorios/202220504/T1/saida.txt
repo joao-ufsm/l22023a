@@ -1,0 +1,1 @@
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Triangulo escaleno

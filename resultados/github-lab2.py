@@ -28,7 +28,7 @@ trabalhos = {
                 "data": datetime(2023, 4, 6, 23, 55).astimezone(tz=None),
                 "testa": True,
                 "entrada": "lados.in",
-                "fonte": ["./entradas/t1/lados.in"],
+                "fonte": ["../../entradas/t1/lados.in"],
                 "resposta": "./entradas/t1/lados.out",
                 "cols": 7
         }
@@ -503,11 +503,11 @@ def testaAlunoResposta(a, trab):
                 alvo_rel = os.path.join(dir_rel, 'resposta.txt')
                 with open(alvo_rel, 'w') as fhandle:
                         fhandle.write(rel)
-                return "<a href=\"{}\">VER</a>".format(alvo_rel)
+                return "[VER](./{})".format(alvo_rel)
         elif trab.get('autoTeste') is not None:                
                 logger.info("RETCODE {}".format(retorno.returncode))
                 if retorno.returncode != 0:
-                        return "<font color=\"red\">erro ({}/7)</font>".format(retorno.returncode)
+                        return "erro ({}/7)".format(retorno.returncode)
                 else:
                         return res_ok
         else:
@@ -710,10 +710,11 @@ def geraEntradasVazias():
         return table
 
 def testaReposAlunos(alunos, trab, file_html):
-        table = "|"
+        table = ""
         #table += "    <td>{0}</td>\n".format(column.strip())
         for a in alunos:
                 print("Gerando para " + a['nome'] + "...")
+                table += "| "
                 if geraComNomes == True:
                         table += " {0} | ".format(a['nome'].strip())
                 # matricula
@@ -819,8 +820,9 @@ def geraHeadersHTML(trab, file_html):
         linha += "|\n"
         # escreve texto
         #file_html.writelines(html_header)
+        texto = "# {}\n".format(trab["dir"])
         agora = datetime.now()
-        texto = "Última atualização: **{}**\n\n".format(agora)
+        texto += "Última atualização: **{}**\n\n".format(agora)
         file_html.writelines(texto)
         file_html.writelines(table)
         file_html.writelines(linha)
