@@ -12,6 +12,7 @@ Você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar
 A previdência privada é um plano de aposentadoria complementar por sistema de capitalização, ou seja, o contribuinte é o responsável por custear seu benefício. O patrimônio total será o valor acumulado por contribuições mais o rendimento dos valores investidos que pode ser resgatado ou convertido em renda.
 
 O grande benefício da previdência privada é a vantagem fiscal, ou seja, a tributação diminui conforme o tempo de aplicação. A tabela regressiva de imposto de renda (IR) reduz a alíquota em cinco pontos a cada dois anos conforme a tabela abaixo:
+
 |  Prazo | Alíquota de IR |
 |---:|------------------:|
 | Até 2 anos| 35% |
