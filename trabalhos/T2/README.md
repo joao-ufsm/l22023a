@@ -51,6 +51,8 @@ $ ./t2 < campo.txt
 - O programa tem que fazer uso de alocação dinâmica de memória.
 - Veja como ler uma linha inteira [aqui](../../aulas/introducao_cxx#entrada-e-saída).
 - O código abaixo é um exemplo de como converter `std:string` para `char*`
+
+
 ```C++
 #include <iostream>
 #include <string>
