@@ -36,15 +36,15 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 |  2 | 2022-03-23 Qui   | [Suporte no Windows para C++](./aulas/08_windows) |
 |  3 | 2022-03-28 Ter   | [Introdução C++](./aulas/introducao_cxx) ([vídeo](https://youtu.be/pB-MdBKNpNo), [slides](./aulas/02_intro_cxx/02_intro_cxx.pdf)) |
 |  4 | 2022-03-30 Qui   | **[T1](./trabalhos/T1)**, Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
-|  5 | 2022-04-04 Ter   | **[T2](./trabalhos/T2) - Campo Minado** |
-|  6 | 2022-04-06 Qui   | **[T2](./trabalhos/T2) - Campo Minado** |
+|  5 | 2022-04-04 Ter   | **[T2 - Campo Minado](./trabalhos/T2)** |
+|  6 | 2022-04-06 Qui   | **[T2 - Campo Minado](./trabalhos/T2)** |
 |  7 | 2022-04-11 Ter   | [Listas em C++](./aulas/09_listas) |
-|  8 | 2022-04-13 Qui   | **[T3](./trabalhos/T3) - Cartas com lista** |
-|  9 | 2022-04-18 Ter   | **[T4](./trabalhos/T4) - Previdência Simplificada** |
+|  8 | 2022-04-13 Qui   | **[T3 - Cartas com lista](./trabalhos/T3)** |
+|  9 | 2022-04-18 Ter   | **[T4 - Previdência Simplificada](./trabalhos/T4)** |
 | 10 | 2022-04-20 Qui   | [Pilhas em C++](./aulas/13_pilhas) |
-| 11 | 2022-04-25 Ter   | **[T5](./trabalhos/T5) - Logística de transporte** |
+| 11 | 2022-04-25 Ter   | **[T5 - Logística de transporte](./trabalhos/T5)** |
 | 12 | 2022-04-27 Qui   |  [Árvore binária de busca (ABB)](./aulas/16_abb/) |
-| 13 | 2022-05-02 Ter   | **[T6](./trabalhos/T6) - Árvore Binária de Busca** |
+| 13 | 2022-05-02 Ter   | **[T6 - Árvore Binária de Busca](./trabalhos/T6)** |
 | 14 | 2022-05-04 Qui   |  |
 | 15 | 2022-05-09 Ter   |  |
 | 16 | 2022-05-11 Qui   |  |
