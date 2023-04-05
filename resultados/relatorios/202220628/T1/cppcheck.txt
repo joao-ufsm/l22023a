@@ -1,0 +1,3 @@
+t1-l223a-dapereira.cpp:39:28: style: Variable 'quantiaLadosIguais' is assigned a value that is never used. [unreadVariable]
+        quantiaLadosIguais = 3;
+                           ^

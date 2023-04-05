@@ -1,0 +1,4 @@
+t1.cpp: In function ‘int main()’:
+t1.cpp:13:19: warning: unused variable ‘lados’ [-Wunused-variable]
+   13 |     int tam_lado, lados[3], qtd_triangulo = 1, i = 0;
+      |                   ^~~~~

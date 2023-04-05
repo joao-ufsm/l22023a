@@ -1,0 +1,6 @@
+main.cpp:44:25: warning: Comparison of a boolean expression with an integer. [compareBoolExpressionWithInt]
+    if (verifica(sides) == true){
+                        ^
+main.cpp:48:31: warning: Comparison of a boolean expression with an integer. [compareBoolExpressionWithInt]
+    else  if (verifica(sides) == false)
+                              ^

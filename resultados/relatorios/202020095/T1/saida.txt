@@ -1,0 +1,4 @@
+Escaleno
+Isosceles
+Inválido
+Isosceles

@@ -1,4 +1,4 @@
 escaleno
 equilatero
-invalido
+Valores invalidos
 isosceles
