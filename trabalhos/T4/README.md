@@ -1,9 +1,9 @@
 
-# T3 - Previdência Simplificada
+# T4 - Previdência Simplificada
 
 ## Deadline
 
-Prazo: **25/04/2022 (Ter)** pelo link do GitHub (https://classroom.github.com/a/sgte-UII).
+Prazo: **03/05/2023 (Qua)** pelo link do GitHub (https://classroom.github.com/a/MFsOQnGV).
 
 Você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 
