@@ -44,7 +44,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 10 | 2022-04-20 Qui   | [Pilhas em C++](./aulas/13_pilhas) |
 | 11 | 2022-04-25 Ter   | **[T5](./trabalhos/T5) - Logística de transporte** |
 | 12 | 2022-04-27 Qui   |  [Árvore binária de busca (ABB)](./aulas/16_abb/) |
-| 13 | 2022-05-02 Ter   |  |
+| 13 | 2022-05-02 Ter   | **[T6](./trabalhos/T6) - Árvore Binária de Busca** |
 | 14 | 2022-05-04 Qui   |  |
 | 15 | 2022-05-09 Ter   |  |
 | 16 | 2022-05-11 Qui   |  |
