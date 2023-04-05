@@ -40,7 +40,7 @@ $ ./t4 < exemplo.txt
 ```
 
 ## Dicas
-- Cada pilha de caixas pode ser implementada usando `std::stack` ou `std::vector` como descrito na  [aula sobre pilhas](../../aulas/06_listas) em C++.
+- Cada pilha de caixas pode ser implementada usando `std::stack` ou `std::vector` como descrito na  [aula sobre pilhas](../../aulas/09_listas) em C++.
 
 ## Regras
 
