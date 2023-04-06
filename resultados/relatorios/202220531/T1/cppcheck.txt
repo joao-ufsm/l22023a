@@ -1,0 +1,5 @@
+t1.cpp:8:13: error: The code contains unhandled character(s) (character code=195). Neither unicode nor extended ascii is supported. [syntaxError]
+void tipoTriângulo(int l1, int l2, int l3)
+            ^
+nofile:0:0: information: Unmatched suppression: missingIncludeSystem [unmatchedSuppression]
+

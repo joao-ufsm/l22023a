@@ -1,0 +1,19 @@
+t1.cpp:8:13: error: stray ‘\303’ in program
+    8 | void tipoTriângulo(int l1, int l2, int l3)
+      |             ^
+t1.cpp:8:14: error: stray ‘\242’ in program
+    8 | void tipoTriângulo(int l1, int l2, int l3)
+      |              ^
+t1.cpp:46:20: error: stray ‘\303’ in program
+   46 |             tipoTriângulo(l1, l2, l3);
+      |                    ^
+t1.cpp:46:21: error: stray ‘\242’ in program
+   46 |             tipoTriângulo(l1, l2, l3);
+      |                     ^
+t1.cpp:8:15: error: expected initializer before ‘ngulo’
+    8 | void tipoTriângulo(int l1, int l2, int l3)
+      |               ^~~~~
+t1.cpp: In function ‘int main()’:
+t1.cpp:46:13: error: ‘tipoTri’ was not declared in this scope
+   46 |             tipoTriângulo(l1, l2, l3);
+      |             ^~~~~~~
