@@ -1,0 +1,12 @@
+main.cpp:17:14: error: Uninitialized variable: campo_minado [uninitvar]
+    le_campo(campo_minado, n);
+             ^
+main.cpp:14:25: style: Unused variable: bombas_adjacentes [unusedVariable]
+    char* campo_minado, bombas_adjacentes;
+                        ^
+t2.cpp:17:14: error: Uninitialized variable: campo_minado [uninitvar]
+    le_campo(campo_minado, n);
+             ^
+t2.cpp:14:25: style: Unused variable: bombas_adjacentes [unusedVariable]
+    char* campo_minado, bombas_adjacentes;
+                        ^

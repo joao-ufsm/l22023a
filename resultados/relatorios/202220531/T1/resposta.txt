@@ -1,0 +1,23 @@
+*** relatorios/202220531/T1/saida.txt	2023-04-13 13:20:04.937050342 -0300
+--- ./entradas/t1/lados.out	2023-04-04 00:17:45.624096758 -0300
+***************
+*** 1,13 ****
+! Quantos triângulos você desejar verificar? 
+! Número do triângulo: 1
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Escanelo!
+! Número do triângulo: 2
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+! Número do triângulo: 3
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Escanelo!
+! Número do triângulo: 4
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+! Número do triângulo: 5
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+! Número do triângulo: 6
+! Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+\ Nenhum caractere de nova linha no final do arquivo
+--- 1,4 ----
+! escaleno
+! equilatero
+! invalido
+! isosceles

@@ -1,0 +1,31 @@
+t2.cpp: In function ‘int main()’:
+t2.cpp:14:25: warning: unused variable ‘bombas_adjacentes’ [-Wunused-variable]
+   14 |     char* campo_minado, bombas_adjacentes;
+      |                         ^~~~~~~~~~~~~~~~~
+t2.cpp: In function ‘char* le_campo(char*, int)’:
+t2.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   50 | }
+      | ^
+t2.cpp: In function ‘int main()’:
+t2.cpp:17:13: warning: ‘campo_minado’ is used uninitialized in this function [-Wuninitialized]
+   17 |     le_campo(campo_minado, n);
+      |     ~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp: In function ‘int main()’:
+main.cpp:14:25: warning: unused variable ‘bombas_adjacentes’ [-Wunused-variable]
+   14 |     char* campo_minado, bombas_adjacentes;
+      |                         ^~~~~~~~~~~~~~~~~
+main.cpp: In function ‘char* le_campo(char*, int)’:
+main.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   50 | }
+      | ^
+main.cpp: In function ‘int main()’:
+main.cpp:17:13: warning: ‘campo_minado’ is used uninitialized in this function [-Wuninitialized]
+   17 |     le_campo(campo_minado, n);
+      |     ~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/cca05Pmq.o: na função "__gnu_cxx::__promote_2<int, int, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<int, int>(int, int)":
+/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/main.cpp:12: múltiplas definições de "main"; /tmp/ccAytYqp.o:/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/t2.cpp:12: definido primeiro aqui
+/usr/bin/ld: /tmp/cca05Pmq.o: na função "tamanho_do_campo()":
+/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/main.cpp:24: múltiplas definições de "tamanho_do_campo()"; /tmp/ccAytYqp.o:/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/t2.cpp:24: definido primeiro aqui
+/usr/bin/ld: /tmp/cca05Pmq.o: na função "le_campo(char*, int)":
+/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/main.cpp:33: múltiplas definições de "le_campo(char*, int)"; /tmp/ccAytYqp.o:/home/jvlima/UFSM/l22023a/resultados/download/t2-Leandro-Dalla-Nora/t2.cpp:33: definido primeiro aqui
+collect2: error: ld returned 1 exit status

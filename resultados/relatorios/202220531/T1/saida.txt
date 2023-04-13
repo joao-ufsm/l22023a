@@ -1,0 +1,13 @@
+Quantos triângulos você desejar verificar? 
+Número do triângulo: 1
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Escanelo!
+Número do triângulo: 2
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+Número do triângulo: 3
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Escanelo!
+Número do triângulo: 4
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+Número do triângulo: 5
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
+Número do triângulo: 6
+Digite o lado 1: Digite o lado 2: Digite o lado 3: Isósceles!
