@@ -1,0 +1,10 @@
+==2422379== Invalid free() / delete / delete[] / realloc()
+==2422379==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2422379==    by 0x109753: main (t2.cpp:55)
+==2422379==  Address 0x4dc0d40 is 0 bytes inside a block of size 8 free'd
+==2422379==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2422379==    by 0x109703: main (t2.cpp:47)
+==2422379==  Block was alloc'd at
+==2422379==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2422379==    by 0x1093B4: main (t2.cpp:14)
+==2422379== 

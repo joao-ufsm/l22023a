@@ -1,6 +1,1 @@
-escaleno
-isosceles
-invalido
-isosceles
-isosceles
-isosceles
+Erro ao abrir o arquivo! 

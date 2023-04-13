@@ -1,0 +1,32 @@
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x1096BD: cria_o_Campo() (T2 - Alan Jacobs.cpp:31)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x109779: cria_o_Campo() (T2 - Alan Jacobs.cpp:39)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x10982D: cria_o_Campo() (T2 - Alan Jacobs.cpp:47)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x1098ED: cria_o_Campo() (T2 - Alan Jacobs.cpp:55)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x1099A5: cria_o_Campo() (T2 - Alan Jacobs.cpp:64)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x109A7D: cria_o_Campo() (T2 - Alan Jacobs.cpp:73)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x109B50: cria_o_Campo() (T2 - Alan Jacobs.cpp:82)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 
+==2422279== Conditional jump or move depends on uninitialised value(s)
+==2422279==    at 0x109C23: cria_o_Campo() (T2 - Alan Jacobs.cpp:91)
+==2422279==    by 0x109E6E: main (T2 - Alan Jacobs.cpp:123)
+==2422279== 

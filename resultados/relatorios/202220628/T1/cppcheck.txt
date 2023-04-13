@@ -1,3 +1,12 @@
+t1-l223a-dapereira.cpp:95:9: style: The scope of the variable 'ladoA' can be reduced. [variableScope]
+    int ladoA = 0, ladoB = 0, ladoC = 0;
+        ^
+t1-l223a-dapereira.cpp:95:20: style: The scope of the variable 'ladoB' can be reduced. [variableScope]
+    int ladoA = 0, ladoB = 0, ladoC = 0;
+                   ^
+t1-l223a-dapereira.cpp:95:31: style: The scope of the variable 'ladoC' can be reduced. [variableScope]
+    int ladoA = 0, ladoB = 0, ladoC = 0;
+                              ^
 t1-l223a-dapereira.cpp:39:28: style: Variable 'quantiaLadosIguais' is assigned a value that is never used. [unreadVariable]
         quantiaLadosIguais = 3;
                            ^

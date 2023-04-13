@@ -1,0 +1,18 @@
+Sem Título2 TRIANGULO.cpp:15:20: error: Uninitialized variable: a [uninitvar]
+     if (a != b && a != c && b != c){
+                   ^
+Sem Título2 TRIANGULO.cpp:6:7: error: Uninitialized variable: a [uninitvar]
+  if (a+b >c && a + c >b && b+ c > a){
+      ^
+Sem Título2 TRIANGULO.cpp:7:8: error: Uninitialized variable: a [uninitvar]
+   if (a == b && a == c && b == c){
+       ^
+Sem Título2 TRIANGULO.cpp:10:7: error: Uninitialized variable: a [uninitvar]
+  if (a == b || a == c || b == c){
+      ^
+Sem Título2 TRIANGULO.cpp:11:8: error: Uninitialized variable: a [uninitvar]
+   if (a != b || a != c || b != c ){
+       ^
+Sem Título2 TRIANGULO.cpp:4:8: style: Variable 'a' is not assigned a value. [unassignedVariable]
+ float a,b,c;
+       ^

@@ -1,0 +1,4 @@
+escaleno
+equilatero
+invalido
+isosceles

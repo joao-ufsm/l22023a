@@ -1,0 +1,2 @@
+Erro ao abrir o arquivo.
+Falha ao ler o campo do arquivo.

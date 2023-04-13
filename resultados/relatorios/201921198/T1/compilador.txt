@@ -1,0 +1,4 @@
+Sem Título2 TRIANGULO.cpp: In function ‘int main()’:
+Sem Título2 TRIANGULO.cpp:6:8: warning: ‘a’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    6 |   if (a+b >c && a + c >b && b+ c > a){
+      |       ~^~

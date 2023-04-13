@@ -1,0 +1,3 @@
+t2.cpp:83:31: style: Parameter 'campo' can be declared with const [constParameter]
+void Desalocar_Matriz(char** &campo, int n)
+                              ^

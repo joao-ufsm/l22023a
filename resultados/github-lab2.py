@@ -31,63 +31,19 @@ trabalhos = {
                 "fonte": ["../../entradas/t1/lados.in"],
                 "resposta": "./entradas/t1/lados.out",
                 "cols": 7
-        }
-        #"t2": {
-        #        "dir": "T2",
-        #        "finalizado": False,
-        #        "github": "t2-grades-1664795026.csv",
-        #        "data": datetime(2022, 10, 5, 23, 55).astimezone(tz=None),
-        #        "testa": True,
-        #        "entrada": "campo.in",
-        #        "fonte": ["../../entradas/t2/campo.in"],
-        #        "resposta": "./entradas/t2/campo.out",
-        #        "valgrind": True,
-        #        "cols": 8
-        #}
-        # "t3": {
-        #         "dir": "T3",
-        #         "finalizado": True,
-        #         "github": "t3-grades-1656606640.csv",
-        #         "data": datetime(2022, 5, 27, 23, 55).astimezone(tz=None),
-        #         "testa": True,
-        #         #"entrada": "",
-        #         "principal": ["../../entradas/t3/libcaca.cpp", "../../entradas/t3/caca.h"],
-        #         "fonte": ["../../entradas/t3/texto.txt"],
-        #         "resposta": "./entradas/t3/saida.txt",
-        #         "geraSaida": True,
-        #         "valgrind": True,
-        #         "cols": 8
-        # }        ,
-        # "t4": {
-        #         "dir": "T4",
-        #         "finalizado": True,
-        #         "github": "t4-grades-1656606648.csv",
-        #         "data": datetime(2022, 6, 2, 23, 55).astimezone(tz=None),
-        #         "testa": True,
-        #         "entrada": "en1.txt",
-        #         "fonte": ["../../entradas/t4/en1.txt"],
-        #         "resposta": "./entradas/t4/saida.txt",
-        #         "cols": 7
-        # },
-        # "t5": {
-        #         "dir": "T5",
-        #         "finalizado": False,
-        #         "github": "t5-grades-1656606657.csv",
-        #         "data": datetime(2022, 6, 21, 23, 55).astimezone(tz=None),
-        #         "testa": False,
-        #         "cols": 7
-        # },                     
-        # "t7": {
-        #         "dir": "T7",
-        #         "finalizado": True,
-        #         "github": "t7-grades-1659530197.csv",
-        #         "principal": ["../../entradas/t7/catch.hpp"],
-        #         "fonte": ["../../entradas/t7/mediumEWD.txt", "../../entradas/t7/rome99.txt", "../../entradas/t7/tinyEWD.txt"],
-        #         "data": datetime(2022, 8, 2, 23, 55).astimezone(tz=None),
-        #         "testa": True,
-        #         "autoTeste": True,
-        #         "cols": 7
-        # },                     
+        },
+        "t2": {
+                "dir": "T2",
+                "finalizado": False,
+                "github": "t2-grades-1681390867.csv",
+                "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
+                "testa": True,
+                "entrada": "campo.in",
+                "fonte": ["../../entradas/t2/campo.in"],
+                "resposta": "./entradas/t2/campo.out",
+                "valgrind": True,
+                "cols": 8
+        }                    
 }
 
 headers = {'Content-Type': 'application/json',
