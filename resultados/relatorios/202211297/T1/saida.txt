@@ -1,0 +1,4 @@
+escalenoequilatero
+escalenoisosceles
+isosceles
+isosceles

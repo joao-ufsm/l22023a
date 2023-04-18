@@ -1,0 +1,3 @@
+t3.cpp:24:86: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+    for (std::list<int>::iterator it = descartadas.begin(); it != descartadas.end(); it++) {
+                                                                                     ^

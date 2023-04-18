@@ -43,7 +43,18 @@ trabalhos = {
                 "resposta": "./entradas/t2/campo.out",
                 "valgrind": True,
                 "cols": 8
-        }                    
+        },
+        "t3": {
+                "dir": "T3",
+                "finalizado": False,
+                "github": "t3-grades-1681819942.csv",
+                "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
+                "testa": True,
+                "entrada": "cartas.in",
+                "fonte": ["../../entradas/t3/cartas.in"],
+                "resposta": "./entradas/t3/cartas.out",
+                "cols": 7
+        }                           
 }
 
 headers = {'Content-Type': 'application/json',
