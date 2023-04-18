@@ -1,12 +1,6 @@
-main.cpp:17:14: error: Uninitialized variable: campo_minado [uninitvar]
-    le_campo(campo_minado, n);
+t2.cpp:59:21: warning: Logical conjunction always evaluates to false: n > 50 && n < 0. [incorrectLogicOperator]
+    } while (n > 50 && n < 0);
+                    ^
+t2.cpp:71:14: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
+    int i, j = 0, k = 0;
              ^
-main.cpp:14:25: style: Unused variable: bombas_adjacentes [unusedVariable]
-    char* campo_minado, bombas_adjacentes;
-                        ^
-t2.cpp:17:14: error: Uninitialized variable: campo_minado [uninitvar]
-    le_campo(campo_minado, n);
-             ^
-t2.cpp:14:25: style: Unused variable: bombas_adjacentes [unusedVariable]
-    char* campo_minado, bombas_adjacentes;
-                        ^

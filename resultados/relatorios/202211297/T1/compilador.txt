@@ -1,0 +1,5 @@
+T1 - Alan Jacobs.cpp: In function ‘int main()’:
+T1 - Alan Jacobs.cpp:19:21: error: ‘tam’ was not declared in this scope; did you mean ‘tm’?
+   19 |         cin>>lado_a[tam]>>lado_b[tam]>>lado_c[tam];
+      |                     ^~~
+      |                     tm

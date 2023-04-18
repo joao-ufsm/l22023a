@@ -1,0 +1,3 @@
+triangulo.cpp:17:17: style: Unused variable: texto [unusedVariable]
+    std::string texto;
+                ^

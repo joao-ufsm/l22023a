@@ -1,1 +1,4 @@
-Erro ao abrir o arquivo! 
+escaleno
+equilatero
+invalido
+isosceles
