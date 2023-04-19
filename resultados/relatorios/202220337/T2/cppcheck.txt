@@ -1,6 +1,6 @@
-t2.cpp:59:21: warning: Logical conjunction always evaluates to false: n > 50 && n < 0. [incorrectLogicOperator]
-    } while (n > 50 && n < 0);
-                    ^
-t2.cpp:71:14: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
-    int i, j = 0, k = 0;
-             ^
+t2.cpp:69:9: style: The scope of the variable 'k' can be reduced. [variableScope]
+    int k = 0;
+        ^
+t2.cpp:73:24: style: Variable 'linha_de_campo' is assigned a value that is never used. [unreadVariable]
+        linha_de_campo = digita_campo();
+                       ^

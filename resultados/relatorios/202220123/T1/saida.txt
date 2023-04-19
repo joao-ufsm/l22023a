@@ -1,1 +1,5 @@
-Falha ao abrir arquivo
+Digite os lados dos triangulos:
+escaleno
+equilatero
+invalido
+isosceles

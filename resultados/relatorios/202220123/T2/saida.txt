@@ -1,2 +1,9 @@
-Erro ao abrir o arquivo.
-Falha ao ler o campo do arquivo.
+Digite o campo
+001@@22@
+001333@2
+0001@211
+00011100
+00001110
+00123@21
+001@@4@1
+00123@21
