@@ -1,0 +1,3 @@
+t2.cpp:23:17: style: The scope of the variable 'bombas_ao_redor' can be reduced. [variableScope]
+            int bombas_ao_redor = 0;
+                ^
