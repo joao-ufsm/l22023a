@@ -3,7 +3,7 @@
 
 ## Deadline
 
-Prazo: **03/05/2023 (Qua)** pelo link do GitHub (https://classroom.github.com/a/MFsOQnGV).
+Prazo: **02/05/2023 (Ter)** pelo link do GitHub (https://classroom.github.com/a/MFsOQnGV).
 
 Você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 

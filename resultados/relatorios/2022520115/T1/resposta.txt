@@ -1,9 +1,9 @@
-*** relatorios/2022520115/T1/saida.txt	2023-04-13 13:19:42.500791905 -0300
+*** relatorios/2022520115/T1/saida.txt	2023-04-20 09:03:43.307846051 -0300
 --- ./entradas/t1/lados.out	2023-04-04 00:17:45.624096758 -0300
 ***************
-*** 0 ****
---- 1,4 ----
-+ escaleno
-+ equilatero
-+ invalido
-+ isosceles
+*** 2,5 ****
+  equilatero
+  invalido
+  isosceles
+- isosceles
+--- 2,4 ----
