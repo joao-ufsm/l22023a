@@ -28,7 +28,7 @@ trabalhos = {
                 "data": datetime(2023, 4, 6, 23, 55).astimezone(tz=None),
                 "testa": True,
                 "entrada": "lados.in",
-                "fonte": ["../../entradas/t1/lados.in"],
+                "fonte": ["../../../entradas/t1/lados.in"],
                 "resposta": "./entradas/t1/lados.out",
                 "cols": 7
         },
@@ -39,7 +39,7 @@ trabalhos = {
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
                 "entrada": "campo.in",
-                "fonte": ["../../entradas/t2/campo.in"],
+                "fonte": ["../../../entradas/t2/campo.in"],
                 "resposta": "./entradas/t2/campo.out",
                 "valgrind": True,
                 "cols": 8
@@ -51,7 +51,7 @@ trabalhos = {
                 "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
                 "testa": True,
                 "entrada": "cartas.in",
-                "fonte": ["../../entradas/t3/cartas.in"],
+                "fonte": ["../../../entradas/t3/cartas.in"],
                 "resposta": "./entradas/t3/cartas.out",
                 "cols": 7
         }                           
@@ -381,18 +381,18 @@ def baixaArquivosAluno(a):
 #                logger.error("download: {}".format(str(e)))
         return locais
 
-def baixaArquivosAlunoPorClone(a):
-        logger.info("Download: {}".format(a.get('nome')))
+def baixaArquivosAlunoPorClone(a, trab):
+        logger.info("Download: {} {}".format(trab['dir'], a.get('nome')))
         atual = os.getcwd()
         if a.get('repo') is None:
                 logger.info("URL vazia: {}".format(a['nome']))
         try:
-                if os.path.exists("download/"+a['repo']):
-                        alvo = os.path.join(atual, 'download', a['repo'])
+                if os.path.exists(os.path.join(atual, 'download', trab['dir'], a['matricula'])):
+                        alvo = os.path.join(atual, 'download', trab['dir'], a['matricula'])
                         os.chdir(alvo)
                         os.system("git pull")
                 else:
-                        os.system("git clone git@github.com:jvlima-ufsm/{0} download/{0}".format(a['repo']))
+                        os.system("git clone git@github.com:jvlima-ufsm/{0} download/{1}/{2}".format(a['repo'], trab['dir'], a['matricula']))
         except Exception as e: 
                 logger.error("download: {}".format(str(e)))     
         finally:
@@ -407,7 +407,7 @@ def testaAlunoResposta(a, trab):
         retorno = None
         try:
                 #alvo = os.path.join(atual, 'download', a['matricula'], trab['dir'])
-                alvo = os.path.join(atual, 'download', a['repo'])
+                alvo = os.path.join(atual, 'download', trab['dir'], a['matricula'])
                 os.chdir(alvo)
                 if trab.get('fonte') is not None:
                         for f in trab['fonte']:
@@ -492,7 +492,8 @@ def testaAlunoCompilador(a, trab):
         rel = None
         try:
                 #alvo = os.path.join(atual, 'download', a['matricula'], trab['dir'])
-                alvo = os.path.join(atual, 'download', a['repo'])
+                #alvo = os.path.join(atual, 'download', a['repo'])
+                alvo= os.path.join(atual, 'download', trab['dir'], a['matricula'])
                 os.chdir(alvo)
                 if trab.get('principal') is not None:
                         #os.system("rm -f *.cpp")
@@ -548,7 +549,7 @@ def testaAlunoValgrind(a, trab):
         alvo_saida = os.path.join(dir_rel, 'valgrind.txt')
         try:
                 #alvo = os.path.join(atual, 'download', a['matricula'], trab['dir'])
-                alvo = os.path.join(atual, 'download', a['repo'])
+                alvo = os.path.join(atual, 'download', trab['dir'], a['matricula'])
                 os.chdir(alvo)
                 # testa arquivo binario
                 if os.path.exists("./a.out") == False:
@@ -593,12 +594,6 @@ def testaAlunoValgrind(a, trab):
         return "[VER](./{})".format(alvo_rel)
 
 def testaAlunoCppcheck(a, trab):
-        #res = filter(lambda x : trab['dir'] in x or trab['dir'].lower() in x, arquivos )
-        #alvos = list(res)
-        #if len(alvos) == 0:
-        #        logger.warning("Nenhum arquivo de {} {}".format(a['nome'], trab['dir']))
-        #        return ""
-        #logger.info("Arquivos trabalho {} de {}: {}".format(trab['dir'], a['nome'], str(alvos) ))
         logger.info("CHECK Arquivos trabalho {} de {}".format(trab['dir'], a['nome'] ))
         atual = os.getcwd()
         rel = None
@@ -606,7 +601,7 @@ def testaAlunoCppcheck(a, trab):
         try:
                 cmd = 'cppcheck --enable=all --suppress=missingIncludeSystem'.split()
                 #alvo = os.path.join(atual, 'download', a['matricula'], trab['dir'])
-                alvo = os.path.join(atual, 'download', a['repo'])
+                alvo = os.path.join(atual, 'download', trab['dir'], a['matricula'])
                 os.chdir(alvo)
                 # diretorio vazio?
                 fontes = [f for f in os.listdir('.') if f.endswith('.cpp')]
@@ -696,7 +691,7 @@ def testaReposAlunos(alunos, trab, file_html):
                         continue
 
                 # baixa arquivos
-                baixaArquivosAlunoPorClone(a)
+                baixaArquivosAlunoPorClone(a, trab)
                 # privado
                 #saida = testaAlunoPrivado(a)
                 #table += "    <td>{0}</td>\n".format(saida.strip())
