@@ -2,4 +2,3 @@ escaleno
 equilatero
 invalido
 iscoceles
-iscoceles

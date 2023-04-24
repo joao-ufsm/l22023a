@@ -10,6 +10,8 @@ import subprocess
 import shutil
 from dotenv import load_dotenv
 
+# oclint  --enable-clang-static-analyzer  -report-type html  t2.cpp  -- -Wall -g|sed 's:/home/jvlima/UFSM/l22023a/resultados/download/::g' > report.html
+
 
 load_dotenv()
 
@@ -34,7 +36,7 @@ trabalhos = {
         },
         "t2": {
                 "dir": "T2",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t2-grades-1681390867.csv",
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -46,7 +48,7 @@ trabalhos = {
         },
         "t3": {
                 "dir": "T3",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t3-grades-1681819942.csv",
                 "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -646,6 +648,66 @@ def testaAlunoCppcheck(a, trab):
                 fhandle.write(rel)
         return "[VER](./{})".format(alvo_rel)
 
+def testaAlunoOclint(a, trab):
+        logger.info("CHECK Arquivos trabalho {} de {}".format(trab['dir'], a['nome'] ))
+        atual = os.getcwd()
+        rel = None
+        fontes = []
+        try:
+                #oclint  --enable-clang-static-analyzer  -report-type html  t2.cpp  -- -Wall -g|sed 's:/home/jvlima/UFSM/l22023a/resultados/download/::g' > report.html
+                cmd = 'oclint  --enable-clang-static-analyzer  -report-type html'.split()
+                
+                #alvo = os.path.join(atual, 'download', a['matricula'], trab['dir'])
+                alvo = os.path.join(atual, 'download', trab['dir'], a['matricula'])
+                os.chdir(alvo)
+                # diretorio vazio?
+                fontes = [f for f in os.listdir('.') if f.endswith('.cpp')]
+                if trab.get('principal') is not None:
+                        for c in trab['principal']:
+                                if os.path.basename(c) in fontes:
+                                        fontes.remove( os.path.basename(c) )
+                                #shutil.copy(c, ".")
+                logger.info("oclint fontes {}".format(alvo))
+                # roda
+                logger.info("oclint em {}".format(fontes))
+                #rel = os.popen(cmd).readlines()
+                if len(fontes) > 0:
+                        cmd += fontes
+                        cmd += "-- -Wall -g".split()
+                        with subprocess.Popen(cmd, stdout=subprocess.PIPE) as proc:
+                                rel = proc.stdout.read().decode("utf-8") 
+                # cria diretorio de saida
+        except Exception as e: 
+                logger.error("oclint: {}".format(str(e)))     
+        finally:
+                os.chdir(atual)
+
+        # se nao tem arquivo CPP no diretorio
+        if len(fontes) == 0:
+                logger.warning("oclint nenhum arquivo de {} {}".format(a['nome'], a['repo']))
+                return res_erro
+
+        # se matricula vazia
+        if a.get('matricula') is None:
+                return ""
+
+        # rel vazio
+        if len(rel) == 0:
+                return res_ok
+
+        rel = rel.replace("/home/jvlima/UFSM/l22023a/resultados/download/", "")
+
+        # escreve relatorio
+        dir_rel = os.path.join('relatorios', a['matricula'], trab['dir'] )
+        try:
+                os.makedirs(dir_rel)
+        except: pass
+        # retorna erros
+        alvo_rel = os.path.join(dir_rel, 'report.html')
+        with open(alvo_rel, 'w') as fhandle:
+                fhandle.write(rel)
+        return "[VER](./{})".format(alvo_rel)
+
 def geraEntradasVazias():
         table = ""
         table += "    | "
@@ -719,7 +781,7 @@ def testaReposAlunos(alunos, trab, file_html):
                 else:
                         table += "  | "
                 # cppcheck
-                saida = testaAlunoCppcheck(a, trab)
+                saida = testaAlunoOclint(a, trab)
                 table += "  {0} | ".format(saida.strip())
                 # valgrind
                 if trab.get("valgrind") is not None:
@@ -769,7 +831,7 @@ def geraHeadersHTML(trab, file_html):
         linha += "|---"
         table += " {0} | ".format("RES")
         linha += "|---"
-        table += " {0} | ".format("Cppcheck")
+        table += " {0} | ".format("Análise")
         linha += "|---"
         if trab.get("valgrind") is not None:
                 table += " {0} | ".format("Valgrind")

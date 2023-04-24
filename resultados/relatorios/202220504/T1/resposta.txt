@@ -1,22 +1,15 @@
-*** relatorios/202220504/T1/saida.txt	2023-04-20 09:31:53.814002944 -0300
+*** relatorios/202220504/T1/saida.txt	2023-04-24 19:41:48.891074620 -0300
 --- ./entradas/t1/lados.out	2023-04-04 00:17:45.624096758 -0300
 ***************
-*** 1,13 ****
-! Digite quantos triangulos voce quer checar: 
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Triangulo escaleno
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Triangulo isosceles
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Nao eh um triangulo.
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Triangulo isosceles
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Triangulo isosceles
-! Digite os valores dos lados do triangulo com espacamento entre eles: 
-! Triangulo isosceles
---- 1,4 ----
-! escaleno
-! equilatero
-! invalido
+*** 1,6 ****
+  escaleno
 ! isosceles
+  invalido
+  isosceles
+- isosceles
+- isosceles
+--- 1,4 ----
+  escaleno
+! equilatero
+  invalido
+  isosceles

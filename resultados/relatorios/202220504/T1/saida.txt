@@ -1,13 +1,6 @@
-Digite quantos triangulos voce quer checar: 
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Triangulo escaleno
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Triangulo isosceles
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Nao eh um triangulo.
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Triangulo isosceles
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Triangulo isosceles
-Digite os valores dos lados do triangulo com espacamento entre eles: 
-Triangulo isosceles
+escaleno
+isosceles
+invalido
+isosceles
+isosceles
+isosceles

@@ -1,4 +1,5 @@
-escalenoequilatero
-escalenoisosceles
+escaleno
+equilatero
+escaleno
 isosceles
 isosceles
