@@ -18,7 +18,8 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 
 ## Métricas do relatório de código
 
-- [Cyclomatic Complexity](https://oclint-docs.readthedocs.io/en/v0.4.3/rules/cyclomatic-complexity.html)
+- [Cyclomatic Complexity](https://docs.oclint.org/en/stable/rules/size.html#highcyclomaticcomplexity)
+- [Análise Oclint](https://docs.oclint.org/en/stable/rules/index.html)
 - [C++ Best Practices](https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - Alternativas Valgrid - [Heaptrack](https://github.com/KDE/heaptrack), [Memoro](https://epfl-vlsc.github.io/memoro/), [Dr Memory](https://drmemory.org/)
