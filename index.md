@@ -16,6 +16,13 @@ Calendário UFSM: https://www.ufsm.br/calendario/
 
 O objetivo da disciplina de Laboratório de Programação II é utilizar as principais estruturas de dados para solucionar problemas ligados à Computação.
 
+## Métricas do relatório de código
+
+- [Cyclomatic Complexity](https://oclint-docs.readthedocs.io/en/v0.4.3/rules/cyclomatic-complexity.html)
+- [C++ Best Practices](https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md)
+- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- Alternativas Valgrid - [Heaptrack](https://github.com/KDE/heaptrack), [Memoro](https://epfl-vlsc.github.io/memoro/), [Dr Memory](https://drmemory.org/)
+
 ## Material de apoio
 
 - GDB [link 1](http://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf), [link 2](https://www.cs.cmu.edu/~gilpin/tutorial/), [link 3](http://www.lrc.ic.unicamp.br/~luciano/courses/mc202-2s2009/tutorial_gdb.txt). Ou a versão gráfica [DDD](https://www.gnu.org/software/ddd/)
