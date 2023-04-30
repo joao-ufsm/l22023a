@@ -2,3 +2,6 @@ Sem Título2 TRIANGULO.cpp: In function ‘int main()’:
 Sem Título2 TRIANGULO.cpp:6:8: warning: ‘a’ may be used uninitialized in this function [-Wmaybe-uninitialized]
     6 |   if (a+b >c && a + c >b && b+ c > a){
       |       ~^~
+/usr/bin/ld: /tmp/ccXOhxx1.o: na função "main":
+/home/jvlima/UFSM/l22023a/resultados/download/T1/201921198/Sem Título2 TRIANGULO.cpp:3: múltiplas definições de "main"; /tmp/ccH0qhq3.o:/home/jvlima/UFSM/l22023a/resultados/download/T1/201921198/main.cpp:7: definido primeiro aqui
+collect2: error: ld returned 1 exit status

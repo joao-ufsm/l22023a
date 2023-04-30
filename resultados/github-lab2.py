@@ -55,8 +55,21 @@ trabalhos = {
                 "entrada": "cartas.in",
                 "fonte": ["../../../entradas/t3/cartas.in"],
                 "resposta": "./entradas/t3/cartas.out",
-                "cols": 7
-        }                           
+                "valgrind": True,
+                "cols": 8
+        },
+        "t4": {
+                "dir": "T4",
+                "finalizado": False,
+                "github": "t4-grades-1682864320.csv",
+                "data": datetime(2023, 5, 2, 23, 55).astimezone(tz=None),
+                "testa": True,
+                "entrada": "prev.in",
+                "fonte": ["../../../entradas/t4/prev.in"],
+                "resposta": "./entradas/t4/prev.out",
+                "valgrind": True,
+                "cols": 8
+        }                              
 }
 
 headers = {'Content-Type': 'application/json',
