@@ -1,0 +1,62 @@
+main.cpp: In function ‘void resgates_das_aplicacoes(std::__cxx11::list<std::shared_ptr<Previdencia_privada> >&, std::__cxx11::list<std::shared_ptr<Previdencia_privada> >&)’:
+main.cpp:73:43: error: ‘it’ was not declared in this scope; did you mean ‘int’?
+   73 |     for (auto resgate = resgates.begin(); it != resgates.end(); it++)
+      |                                           ^~
+      |                                           int
+main.cpp:77:21: error: ‘struct std::_List_iterator<std::shared_ptr<Previdencia_privada> >’ has no member named ‘capital’
+   77 |         if (resgate.capital > 0)
+      |                     ^~~~~~~
+main.cpp:84:39: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘cota’
+   84 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                       ^~~~
+main.cpp:84:74: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘qtd_cotas’
+   84 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                          ^~~~~~~~~
+main.cpp:84:102: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘ano’
+   84 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                                                      ^~~
+main.cpp:85:26: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘qtd_cotas’
+   85 |                 resgate->qtd_cotas -= aplicacao->qtd_cotas;
+      |                          ^~~~~~~~~
+main.cpp:86:27: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘pop_front’
+   86 |                 aplicacao.pop_front();
+      |                           ^~~~~~~~~
+main.cpp:87:31: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘qtd_cotas’
+   87 |             } while (resgate->qtd_cotas > aplicacao->qtd_cotas);
+      |                               ^~~~~~~~~
+main.cpp:89:36: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘capital’
+   89 |             lucro_bruto = resgate->capital;
+      |                                    ^~~~~~~
+main.cpp:90:35: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘cota’
+   90 |             imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                   ^~~~
+main.cpp:90:70: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘qtd_cotas’
+   90 |             imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                      ^~~~~~~~~
+main.cpp:90:98: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘ano’
+   90 |             imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                                                  ^~~
+main.cpp:91:44: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘capital’
+   91 |             aplicacao->capital -= resgate->capital;
+      |                                            ^~~~~~~
+main.cpp:92:21: error: ‘struct std::_List_iterator<std::shared_ptr<Previdencia_privada> >’ has no member named ‘pop_front’
+   92 |             resgate.pop_front();
+      |                     ^~~~~~~~~
+main.cpp:98:41: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘cota’
+   98 |                 lucro_bruto += resgate->cota * aplicacao->qtd_cotas;
+      |                                         ^~~~
+main.cpp:99:39: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘cota’
+   99 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                       ^~~~
+main.cpp:99:74: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘qtd_cotas’
+   99 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                          ^~~~~~~~~
+main.cpp:99:102: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘ano’
+   99 |                 imposto += ((resgate->cota - aplicacao->cota) * resgate->qtd_cotas) * tempo(resgate->ano - aplicacao->ano);
+      |                                                                                                      ^~~
+main.cpp:100:27: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘pop_front’
+  100 |                 aplicacao.pop_front();
+      |                           ^~~~~~~~~
+main.cpp:101:32: error: ‘class std::shared_ptr<Previdencia_privada>’ has no member named ‘size’
+  101 |             } while (aplicacao.size() != 0);
+      |                                ^~~~

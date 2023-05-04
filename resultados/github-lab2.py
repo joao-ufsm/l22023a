@@ -69,7 +69,19 @@ trabalhos = {
                 "resposta": "./entradas/t4/prev.out",
                 "valgrind": True,
                 "cols": 8
-        }                              
+        },
+        "t5": {
+                "dir": "T5",
+                "finalizado": False,
+                "github": "t5-grades-1683166930.csv",
+                "data": datetime(2023, 5, 9, 23, 55).astimezone(tz=None),
+                "testa": True,
+                "entrada": "teste1.in",
+                "fonte": ["../../../entradas/t5/teste1.in"],
+                "resposta": "./entradas/t5/teste1.out",
+                "valgrind": True,
+                "cols": 8
+        }                                      
 }
 
 headers = {'Content-Type': 'application/json',

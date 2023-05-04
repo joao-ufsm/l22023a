@@ -1,16 +1,16 @@
-==391853== Invalid write of size 1
-==391853==    at 0x492E4FE: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-==391853==    by 0x1094E5: main (T2 - Alan Jacobs.cpp:46)
-==391853==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
-==391853==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==391853==    by 0x1094BC: main (T2 - Alan Jacobs.cpp:45)
-==391853== 
-==391853== Invalid read of size 1
-==391853==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==391853==    by 0x499EBCD: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-==391853==    by 0x1093D4: imprime_campo(int, char**) (T2 - Alan Jacobs.cpp:34)
-==391853==    by 0x10950D: main (T2 - Alan Jacobs.cpp:51)
-==391853==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
-==391853==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==391853==    by 0x1094BC: main (T2 - Alan Jacobs.cpp:45)
-==391853== 
+==505906== Invalid write of size 1
+==505906==    at 0x492E4FE: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==505906==    by 0x1094E5: main (T2 - Alan Jacobs.cpp:46)
+==505906==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
+==505906==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==505906==    by 0x1094BC: main (T2 - Alan Jacobs.cpp:45)
+==505906== 
+==505906== Invalid read of size 1
+==505906==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==505906==    by 0x499EBCD: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==505906==    by 0x1093D4: imprime_campo(int, char**) (T2 - Alan Jacobs.cpp:34)
+==505906==    by 0x10950D: main (T2 - Alan Jacobs.cpp:51)
+==505906==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
+==505906==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==505906==    by 0x1094BC: main (T2 - Alan Jacobs.cpp:45)
+==505906== 

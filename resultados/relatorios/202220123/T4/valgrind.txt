@@ -1,0 +1,5 @@
+==508246== 40 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==508246==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==508246==    by 0x109BB8: inicio() (main.cpp:111)
+==508246==    by 0x109C88: main (main.cpp:128)
+==508246== 
