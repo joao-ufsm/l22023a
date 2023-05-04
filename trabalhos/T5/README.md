@@ -39,6 +39,12 @@ Se preferir, pode testar com arquivos texto maiores de entrada utilizando o redi
 $ ./a.out < exemplo.txt
 ```
 
+## Avaliação de código
+
+O relatório de análise estática de código será considerado na avaliação. Os erros terão **desconto** de:
+- `0,5` se o código tem erros de prioridade 3, com tolerância para erros de `short variable name`.
+- `1,0` para erros de prioridade 2.
+
 ## Dicas
 - Cada pilha de caixas pode ser implementada usando `std::stack` ou `std::vector` como descrito na  [aula sobre pilhas](../../aulas/09_listas) em C++.
 
