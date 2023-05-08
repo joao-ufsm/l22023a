@@ -1,0 +1,4 @@
+main.cpp: In function ‘void empilhamento_de_caixas(std::string, int)’:
+main.cpp:31:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   31 |     for (auto i = 0; i < palavra.size(); i++)
+      |                      ~~^~~~~~~~~~~~~~~~

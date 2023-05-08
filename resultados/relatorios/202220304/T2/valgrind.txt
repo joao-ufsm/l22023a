@@ -1,10 +1,10 @@
-==506173== Invalid free() / delete / delete[] / realloc()
-==506173==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==506173==    by 0x109753: main (t2.cpp:55)
-==506173==  Address 0x4dc0d40 is 0 bytes inside a block of size 8 free'd
-==506173==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==506173==    by 0x109703: main (t2.cpp:47)
-==506173==  Block was alloc'd at
-==506173==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==506173==    by 0x1093B4: main (t2.cpp:14)
-==506173== 
+==797134== Invalid free() / delete / delete[] / realloc()
+==797134==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==797134==    by 0x109753: main (t2.cpp:55)
+==797134==  Address 0x4dc0d40 is 0 bytes inside a block of size 8 free'd
+==797134==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==797134==    by 0x109703: main (t2.cpp:47)
+==797134==  Block was alloc'd at
+==797134==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==797134==    by 0x1093B4: main (t2.cpp:14)
+==797134== 

@@ -1,5 +1,5 @@
 escaleno
 equilatero
-escaleno
+invalido
 isosceles
 isosceles
