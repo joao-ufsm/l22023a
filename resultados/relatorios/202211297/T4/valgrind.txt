@@ -1,0 +1,84 @@
+==996160== Invalid write of size 4
+==996160==    at 0x4937AA4: void std::__convert_to_v<float>(char const*, float&, std::_Ios_Iostate&, __locale_struct* const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x4995F19: std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, float&) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x49851C2: std::istream& std::istream::_M_extract<float>(float&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x109B23: le_operacao() (t4.cpp:105)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd20 is 0 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid write of size 4
+==996160==    at 0x4982E60: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x109B52: le_operacao() (t4.cpp:105)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd24 is 4 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid write of size 1
+==996160==    at 0x4984602: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x109AC5: le_operacao() (t4.cpp:105)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd28 is 8 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid write of size 8
+==996160==    at 0x4937B64: void std::__convert_to_v<double>(char const*, double&, std::_Ios_Iostate&, __locale_struct* const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x4996129: std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, double&) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x4985312: std::istream& std::istream::_M_extract<double>(double&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996160==    by 0x109AF4: le_operacao() (t4.cpp:105)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd30 is 16 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid read of size 1
+==996160==    at 0x10987A: resgate(Operacao*, int) (t4.cpp:69)
+==996160==    by 0x109B6D: le_operacao() (t4.cpp:110)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd28 is 8 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid read of size 1
+==996160==    at 0x10967E: resgate_total(Operacao*, float, int, double*, double*) (t4.cpp:42)
+==996160==    by 0x109998: resgate(Operacao*, int) (t4.cpp:78)
+==996160==    by 0x109B6D: le_operacao() (t4.cpp:110)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd28 is 8 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid read of size 8
+==996160==    at 0x1096AE: resgate_total(Operacao*, float, int, double*, double*) (t4.cpp:44)
+==996160==    by 0x109998: resgate(Operacao*, int) (t4.cpp:78)
+==996160==    by 0x109B6D: le_operacao() (t4.cpp:110)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd30 is 16 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== Invalid read of size 8
+==996160==    at 0x1096ED: resgate_total(Operacao*, float, int, double*, double*) (t4.cpp:46)
+==996160==    by 0x109998: resgate(Operacao*, int) (t4.cpp:78)
+==996160==    by 0x109B6D: le_operacao() (t4.cpp:110)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160==  Address 0x4dbfd30 is 16 bytes after a block of size 160 alloc'd
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 
+==996160== 160 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==996160==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==996160==    by 0x109A78: le_operacao() (t4.cpp:97)
+==996160==    by 0x109B7D: main (t4.cpp:116)
+==996160== 

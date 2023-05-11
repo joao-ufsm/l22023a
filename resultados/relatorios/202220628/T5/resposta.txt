@@ -1,0 +1,55 @@
+*** relatorios/202220628/T5/saida.txt	2023-05-11 10:03:27.032191481 -0300
+--- ./entradas/t5/teste1.out	2023-05-03 23:20:36.696115620 -0300
+***************
+*** 1,25 ****
+! Carga 1: 32773
+! Carga 2: 32770
+! Carga 3: 32773
+! Carga 4: 32775
+! Carga 5: 32772
+! Carga 6: 32770
+! Carga 7: 32773
+! Carga 8: 32773
+! Carga 9: 32769
+! Carga 10: 32773
+! Carga 11: 32771
+! Carga 12: 32772
+! Carga 13: 32771
+! Carga 14: 32770
+! Carga 15: 32771
+! Carga 16: 32773
+! Carga 17: 32772
+! Carga 18: 32772
+! Carga 19: 32771
+! Carga 20: 32771
+! Carga 21: 32771
+! Carga 22: 32774
+! Carga 23: 32770
+! Carga 24: 32772
+! Carga 25: 32771
+--- 1,25 ----
+! Carga 1: 9
+! Carga 2: 6
+! Carga 3: 9
+! Carga 4: 11
+! Carga 5: 8
+! Carga 6: 6
+! Carga 7: 9
+! Carga 8: 9
+! Carga 9: 5
+! Carga 10: 9
+! Carga 11: 7
+! Carga 12: 8
+! Carga 13: 7
+! Carga 14: 6
+! Carga 15: 7
+! Carga 16: 9
+! Carga 17: 8
+! Carga 18: 8
+! Carga 19: 7
+! Carga 20: 7
+! Carga 21: 7
+! Carga 22: 10
+! Carga 23: 6
+! Carga 24: 8
+! Carga 25: 7

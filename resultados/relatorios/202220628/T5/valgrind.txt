@@ -1,0 +1,26 @@
+==996190== Conditional jump or move depends on uninitialised value(s)
+==996190==    at 0x4990402: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499ED5E: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x109571: organiza(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (t5.cpp:25)
+==996190==    by 0x10967A: main (t5.cpp:33)
+==996190== 
+==996190== Use of uninitialised value of size 8
+==996190==    at 0x499010B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499042C: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499ED5E: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x109571: organiza(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (t5.cpp:25)
+==996190==    by 0x10967A: main (t5.cpp:33)
+==996190== 
+==996190== Conditional jump or move depends on uninitialised value(s)
+==996190==    at 0x499011D: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499042C: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499ED5E: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x109571: organiza(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (t5.cpp:25)
+==996190==    by 0x10967A: main (t5.cpp:33)
+==996190== 
+==996190== Conditional jump or move depends on uninitialised value(s)
+==996190==    at 0x4990462: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x499ED5E: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==996190==    by 0x109571: organiza(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (t5.cpp:25)
+==996190==    by 0x10967A: main (t5.cpp:33)
+==996190== 
