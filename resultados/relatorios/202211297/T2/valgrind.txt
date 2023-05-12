@@ -1,16 +1,10 @@
-==993411== Invalid write of size 1
-==993411==    at 0x492E4FE: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-==993411==    by 0x1094F8: main (T2 - Alan Jacobs.cpp:49)
-==993411==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
-==993411==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==993411==    by 0x1094CF: main (T2 - Alan Jacobs.cpp:48)
-==993411== 
-==993411== Invalid read of size 1
-==993411==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==993411==    by 0x499EBCD: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-==993411==    by 0x1093D4: imprime_campo(int, char**) (T2 - Alan Jacobs.cpp:35)
-==993411==    by 0x109520: main (T2 - Alan Jacobs.cpp:54)
-==993411==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
-==993411==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==993411==    by 0x1094CF: main (T2 - Alan Jacobs.cpp:48)
-==993411== 
+==1060257== Invalid read of size 1
+==1060257==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1060257==    by 0x499EBCD: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==1060257==    by 0x1095AF: imprime_campo(int, char**) (T2 - Alan Jacobs.cpp:57)
+==1060257==    by 0x1096A4: main (T2 - Alan Jacobs.cpp:77)
+==1060257==  Address 0x4dc0d48 is 0 bytes after a block of size 8 alloc'd
+==1060257==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1060257==    by 0x109364: aloca_campo(int) (T2 - Alan Jacobs.cpp:12)
+==1060257==    by 0x10967E: main (T2 - Alan Jacobs.cpp:73)
+==1060257== 

@@ -1,6 +1,4 @@
+escaleno
+equilatero
 invalido
-invalido
-invalido
-invalido
-invalido
-invalido
+isosceles
