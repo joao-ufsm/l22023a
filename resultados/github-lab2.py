@@ -25,7 +25,7 @@ geraComNomes = False
 trabalhos = {
         "t1": {
                 "dir": "T1",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t1-grades-1680578092.csv",
                 "data": datetime(2023, 4, 6, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -36,7 +36,7 @@ trabalhos = {
         },
         "t2": {
                 "dir": "T2",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t2-grades-1681390867.csv",
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -48,7 +48,7 @@ trabalhos = {
         },
         "t3": {
                 "dir": "T3",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t3-grades-1681819942.csv",
                 "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -60,7 +60,7 @@ trabalhos = {
         },
         "t4": {
                 "dir": "T4",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t4-grades-1682864320.csv",
                 "data": datetime(2023, 5, 2, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -81,7 +81,20 @@ trabalhos = {
                 "resposta": "./entradas/t5/teste1.out",
                 "valgrind": True,
                 "cols": 8
-        }                                      
+        },                                      
+        "t6": {
+                "dir": "T6",
+                "finalizado": False,
+                "github": "t6-grades-1684202711.csv",
+                "data": datetime(2023, 5, 25, 23, 55).astimezone(tz=None),
+                "testa": True,
+                #"entrada": "teste1.in",
+                #"fonte": ["../../../entradas/t5/teste1.in"],
+                #"resposta": "./entradas/t5/teste1.out",
+                "valgrind": True,
+                "autoTeste" : True,
+                "cols": 8
+        }         
 }
 
 headers = {'Content-Type': 'application/json',
