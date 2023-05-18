@@ -1,0 +1,4 @@
+main.cpp: In function ‘int main()’:
+main.cpp:44:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::stack<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   44 |         for (int j = 0; j < carga.size(); j++)
+      |                         ~~^~~~~~~~~~~~~~
