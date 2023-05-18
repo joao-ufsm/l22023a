@@ -58,7 +58,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 15 | 2022-05-09 Ter   |  |
 | 16 | 2022-05-11 Qui   |  |
 | 17 | 2022-05-16 Ter   |  [Árvores balanceadas (AVL)](./aulas/19_avl/) |
-| 18 | 2022-05-18 Qui   |  |
+| 18 | 2022-05-18 Qui   | [Árvores balanceadas (AVL) - parte 2](./aulas/20_avl/) |
 | 19 | 2022-05-23 Ter   |  |
 | 20 | 2022-05-25 Qui   |  |
 | 21 | 2022-05-30 Ter   |  |
