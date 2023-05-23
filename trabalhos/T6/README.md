@@ -43,6 +43,12 @@ Comentários sobre o exemplo:
 - Note que o programa não tem uma função `main()` porque não precisa! O Catch2 faz isso para nós.
 - **Não copie o repositório!** Na hora de criar o seu repostório de entrega, os arquivos estarão disponíveis.
 
+## Avaliação de código
+
+O relatório de análise estática de código será considerado na avaliação. Os erros terão **desconto** de:
+- `0,5` se o código tem erros de prioridade 3, com tolerância para erros de `short variable name`.
+- `1,0` para erros de prioridade 2.
+
 ## Dicas
 - As entradas estão em pré-ordem! Cuidado para não confundir.
 
