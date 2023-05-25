@@ -1,5 +1,5 @@
-==1546897== Conditional jump or move depends on uninitialised value(s)
-==1546897==    at 0x10A694: empilhamento_de_caixas(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (main.cpp:32)
-==1546897==    by 0x10A55F: leitura_dos_valores() (main.cpp:22)
-==1546897==    by 0x10A4D5: main (main.cpp:12)
-==1546897== 
+==1712553== Conditional jump or move depends on uninitialised value(s)
+==1712553==    at 0x10A694: empilhamento_de_caixas(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (main.cpp:32)
+==1712553==    by 0x10A55F: leitura_dos_valores() (main.cpp:22)
+==1712553==    by 0x10A4D5: main (main.cpp:12)
+==1712553== 
