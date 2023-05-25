@@ -6,9 +6,9 @@
 
 ## Deadline
 
-Prazo TDD: **22/06/2022 (Qui)** pelo link do GitHub (https://classroom.github.com/a/mRF0kHMt).
+**Prazo TDD: 22/06/2022 (Qui)** pelo link do GitHub [https://classroom.github.com/a/mRF0kHMt](https://classroom.github.com/a/mRF0kHMt).
 
-Prazo Invaders (apresentação): **29/06/2022 (Qui)**
+**Prazo Invaders (apresentação): 29/06/2022 (Qui)**
 
 Se necessário, você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 
@@ -61,6 +61,16 @@ As funções que manipulam a struct de árvore `Abb` devem ser completadas. Note
 Comentários sobre o exemplo:
 - A execução irá mostrar o relatório de testes efetuados.
 - Note que o programa não tem uma função `main()` porque não precisa! O Catch2 faz isso para nós.
+
+## Avaliação do trabalho
+
+Este trabalho terá **peso 3**. A nota será definida baseada na divisão abaixo:
+- `0,4` para os testes de TDD.
+- `0,6` para o jogo Invaders.
+
+O relatório de análise estática de código será considerado na avaliação. Os erros terão **desconto** de:
+- `0,5` se o código tem erros de prioridade 3, com tolerância para erros de `short variable name`.
+- `1,0` para erros de prioridade 2.
 
 ## Allegro
 
