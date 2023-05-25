@@ -6,7 +6,7 @@
 
 ## Deadline
 
-**Prazo TDD: 22/06/2022 (Qui)** pelo link do GitHub [https://classroom.github.com/a/mRF0kHMt](https://classroom.github.com/a/mRF0kHMt).
+**Prazo TDD: 15/06/2022 (Qui)** pelo link do GitHub [https://classroom.github.com/a/mRF0kHMt](https://classroom.github.com/a/mRF0kHMt).
 
 **Prazo Invaders (apresentação): 29/06/2022 (Qui)**
 
