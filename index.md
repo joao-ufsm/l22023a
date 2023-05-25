@@ -54,25 +54,25 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 11 | 2022-04-25 Ter   | **[T5 - Logística de transporte](./trabalhos/T5)** |
 | 12 | 2022-04-27 Qui   |  [Árvore binária de busca (ABB)](./aulas/16_abb/) |
 | 13 | 2022-05-02 Ter   | **[T6 - Árvore Binária de Busca](./trabalhos/T6)** |
-| 14 | 2022-05-04 Qui   |  |
-| 15 | 2022-05-09 Ter   |  |
-| 16 | 2022-05-11 Qui   |  |
-| 17 | 2022-05-16 Ter   |  [Árvores balanceadas (AVL)](./aulas/19_avl/) |
+| 14 | 2022-05-04 Qui   | T6 |
+| 15 | 2022-05-09 Ter   | T6 |
+| 16 | 2022-05-11 Qui   | T6 |
+| 17 | 2022-05-16 Ter   | [Árvores balanceadas (AVL)](./aulas/19_avl/) |
 | 18 | 2022-05-18 Qui   | [Árvores balanceadas (AVL) - parte 2](./aulas/20_avl/) |
-| 19 | 2022-05-23 Ter   |  |
-| 20 | 2022-05-25 Qui   |  |
-| 21 | 2022-05-30 Ter   |  |
-| 22 | 2022-06-01 Qui   |  | 
-| 23 | 2022-06-06 Ter   |  | 
+| 19 | 2022-05-23 Ter   | T6 |
+| 20 | 2022-05-25 Qui   | **[T7 - AVL Invaders com TDD](./trabalhos/T7)** |
+| 21 | 2022-05-30 Ter   | T7 |
+| 22 | 2022-06-01 Qui   | T7 | 
+| 23 | 2022-06-06 Ter   | T7 | 
 | - | 2022-06-08 Qui   | **Feriado** (Corpus Christi)  |
-| 24 | 2022-06-13 Ter   | 
-| 25 | 2022-06-15 Qui   | 
-| 26 | 2022-06-20 Ter   | 
+| 24 | 2022-06-13 Ter   | T7 |
+| 25 | 2022-06-15 Qui   | T7 |
+| 26 | 2022-06-20 Ter   | T7 |
 | 27 | 2022-06-22 Qui   | Grafos ([não-direcionados](./aulas/23_grafos/41UndirectedGraphs.pdf), [direcionados](./aulas/23_grafos/42DirectedGraphs.pdf))  |
 | 28 | 2022-06-27 Ter   | Algoritmo de Dijkstra ([slides](aulas/23_grafos/44ShortestPaths.pdf), [demo](./aulas/23_grafos/44DemoDijkstra.pdf)) |
-| 29 | 2022-06-29 Qui   | [Smart pointers](./aulas/11_pointers/) |
+| 29 | 2022-06-29 Qui   | **[T7 - Prazo de apresentação](./trabalhos/T7)** |
 | 30 | 2022-07-04 Ter   | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
-|  | 2022-07-06 Qui   |
+|  | 2022-07-06 Qui     |  [Smart pointers](./aulas/11_pointers/) |
 | - | 2022-07-11 Ter   | **Sem aula** (Sexta-feira)  |
 | - | 2022-07-13 Qui   | **Sem aula** (Sábado)  |
 | - | 2023-07-18 Ter | **Avaliações Finais** |
