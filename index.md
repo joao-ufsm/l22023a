@@ -10,6 +10,8 @@ Horários: terças e quintas, 10:30 às 12:30.
 
 **Página do corretor:** [https://joao-ufsm.github.io/l22023a/resultados/](./resultados/)
 
+**Notas:** [https://docs.google.com/spreadsheets/d/1suV7uOAcGT1kit_gg4NscsgWGQ_n_m7w1ktIVWBT8rA/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1suV7uOAcGT1kit_gg4NscsgWGQ_n_m7w1ktIVWBT8rA/edit?usp=sharing) 
+
 Calendário UFSM: https://www.ufsm.br/calendario/
 
 ## Sobre a disciplina
