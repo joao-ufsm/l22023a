@@ -1,0 +1,4 @@
+t3.cpp: In function ‘int main()’:
+t3.cpp:10:26: error: ‘n’ was not declared in this scope
+   10 |     for (int i = 1; i <= n; i++) {
+      |                          ^

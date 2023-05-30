@@ -1,5 +1,5 @@
-/usr/bin/ld: /tmp/cce7muud.o: na função "main":
-/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/catch.hpp:17540: múltiplas definições de "main"; /tmp/ccpR7Xid.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
-/usr/bin/ld: /tmp/ccU0dIMf.o: na função "__gnu_cxx::new_allocator<int>::new_allocator()":
-/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/main.cpp:115: múltiplas definições de "main"; /tmp/ccpR7Xid.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
+/usr/bin/ld: /tmp/ccSIqIYB.o: na função "main":
+/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/catch.hpp:17540: múltiplas definições de "main"; /tmp/ccI9yEGC.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
+/usr/bin/ld: /tmp/ccgq6lSD.o: na função "__gnu_cxx::new_allocator<int>::new_allocator()":
+/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/main.cpp:115: múltiplas definições de "main"; /tmp/ccI9yEGC.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
 collect2: error: ld returned 1 exit status

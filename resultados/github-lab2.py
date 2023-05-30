@@ -25,7 +25,7 @@ geraComNomes = False
 trabalhos = {
         "t1": {
                 "dir": "T1",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t1-grades-1680578092.csv",
                 "data": datetime(2023, 4, 6, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -36,7 +36,7 @@ trabalhos = {
         },
         "t2": {
                 "dir": "T2",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t2-grades-1681390867.csv",
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -48,7 +48,7 @@ trabalhos = {
         },
         "t3": {
                 "dir": "T3",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t3-grades-1681819942.csv",
                 "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -60,7 +60,7 @@ trabalhos = {
         },
         "t4": {
                 "dir": "T4",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t4-grades-1682864320.csv",
                 "data": datetime(2023, 5, 2, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -930,6 +930,7 @@ def readReposFromCsv(matriculados, trab):
  #               entry['repo'] = segments[2]
         output += [entry]
         logger.info("{} {} {}".format(entry.get('matricula'), entry.get('url'), entry.get('nome')))
+   output = sorted(output, key=lambda x:x.get('matricula'))        
    return output
 
 def principal():
