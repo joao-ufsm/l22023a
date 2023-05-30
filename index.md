@@ -36,6 +36,18 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 - Cormen, Algoritmos: teoria e prática, 3o edição. ([notas 2008](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/lecture-notes/), [notas 2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/))
 - Sedgewick, Algorithms, 4th edition. ([slides](http://algs4.cs.princeton.edu/lectures/))
 
+## Trabalhos
+
+| Prazo | Peso | Asssunto   |
+|:---|----:|:------------------|
+| **29/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 2) |
+| **15/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 1) |
+| ~~**25/05/2023**~~ | `2,0` | [T6 - Árvore Binária de Busca](./trabalhos/T6)  |
+| ~~**09/05/2023**~~ | `1,0` | [T5 - Logística de transporte](./trabalhos/T5) |
+| ~~**02/05/2023**~~ | `2,0` | [T4 - Previdência Simplificada](./trabalhos/T4) |
+| ~~**20/04/2023**~~ | `1,0` | [T3 - Cartas com lista](./trabalhos/T3) |
+| ~~**13/04/2023**~~ | `1,0` | [T2 - Campo Minado](./trabalhos/T2) |
+| ~~**05/04/2023**~~ | `1,0` | [T1 - Triângulos](./trabalhos/T1) |
 
 ## Aulas e trabalhos
 
