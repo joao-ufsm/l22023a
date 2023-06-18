@@ -1,0 +1,15 @@
+==97432== Invalid read of size 8
+==97432==    at 0x174011: Abb<int>* abb_remove<int>(Abb<int>*, int) (abb.hpp:225)
+==97432==    by 0x147F9E: ____C_A_T_C_H____T_E_S_T____14() (arvore.cpp:110)
+==97432==    by 0x133B73: Catch::TestInvokerAsFunction::invoke() const (catch.hpp:14257)
+==97432==    by 0x132DB2: Catch::TestCase::invoke() const (catch.hpp:14100)
+==97432==    by 0x12D113: Catch::RunContext::invokeActiveTestCase() (catch.hpp:12959)
+==97432==    by 0x12CE46: Catch::RunContext::runCurrentTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (catch.hpp:12932)
+==97432==    by 0x12B8BC: Catch::RunContext::runTest(Catch::TestCase const&) (catch.hpp:12693)
+==97432==    by 0x12EA95: Catch::(anonymous namespace)::TestGroup::execute() (catch.hpp:13287)
+==97432==    by 0x12FEA8: Catch::Session::runInternal() (catch.hpp:13493)
+==97432==    by 0x12FB9E: Catch::Session::run() (catch.hpp:13449)
+==97432==    by 0x17388E: int Catch::Session::run<char>(int, char const* const*) (catch.hpp:13171)
+==97432==    by 0x146831: main (catch.hpp:17444)
+==97432==  Address 0x10 is not stack'd, malloc'd or (recently) free'd
+==97432== 

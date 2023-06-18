@@ -44,7 +44,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 |:---|----:|:------------------|
 |  | `1,0` | [T8 - Dijkstra](./trabalhos/T8) |
 | **29/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 2) |
-| **15/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 1) |
+| **22/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 1) |
 | ~~**25/05/2023**~~ | `2,0` | [T6 - Árvore Binária de Busca](./trabalhos/T6)  |
 | ~~**09/05/2023**~~ | `1,0` | [T5 - Logística de transporte](./trabalhos/T5) |
 | ~~**02/05/2023**~~ | `2,0` | [T4 - Previdência Simplificada](./trabalhos/T4) |

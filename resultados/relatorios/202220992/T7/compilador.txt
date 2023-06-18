@@ -1,0 +1,4 @@
+../../../entradas/t7/arvore.cpp:28:10: fatal error: catch.hpp: Arquivo ou diretório inexistente
+   28 | #include "catch.hpp"
+      |          ^~~~~~~~~~~
+compilation terminated.

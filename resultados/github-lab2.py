@@ -84,7 +84,7 @@ trabalhos = {
         },                                      
         "t6": {
                 "dir": "T6",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t6-grades-1684202711.csv",
                 "data": datetime(2023, 5, 25, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -94,7 +94,21 @@ trabalhos = {
                 "valgrind": True,
                 "autoTeste" : True,
                 "cols": 8
-        }         
+        },
+        "t7": {
+                "dir": "T7",
+                "finalizado": False,
+                "github": "t7-grades-1687128436.csv",
+                "data": datetime(2023, 6, 22, 23, 55).astimezone(tz=None),
+                "testa": True,
+                #"entrada": "teste1.in",
+                #"fonte": ["../../../entradas/t5/teste1.in"],
+                #"resposta": "./entradas/t5/teste1.out",
+                "principal": ["../../../entradas/t7/arvore.cpp"],
+                "valgrind": True,
+                "autoTeste" : True,
+                "cols": 8
+        }                 
 }
 
 headers = {'Content-Type': 'application/json',
@@ -535,16 +549,17 @@ def testaAlunoCompilador(a, trab):
                 #alvo = os.path.join(atual, 'download', a['repo'])
                 alvo= os.path.join(atual, 'download', trab['dir'], a['matricula'])
                 os.chdir(alvo)
+                fontes = [f for f in os.listdir('.') if f.endswith('.cpp')]
                 if trab.get('principal') is not None:
-                        #os.system("rm -f *.cpp")
                         for c in trab['principal']:
                                 shutil.copy(c, ".")
-                fontes = [f for f in os.listdir('.') if f.endswith('.cpp')]
+                        fontes = [os.path.basename(f) for f in trab['principal'] if f.endswith('.cpp')]
                 # se nao tem arquivo CPP no diretorio
                 if len(fontes) == 0:
                         logger.warning("Nenhum arquivo de {} {}".format(a['nome'], a['repo']))
                         os.chdir(atual)
                         return "", False
+                logger.info("COMPILADOR compilando {} de {}: {}".format(trab['dir'], a['nome'], fontes ))                        
                 compilador = 'g++ -Wall -std=c++11 -g'.split()
                 compilador += fontes
                 if trab.get('libs') is not None:
@@ -649,7 +664,6 @@ def testaAlunoCppcheck(a, trab):
                         for c in trab['principal']:
                                 if os.path.basename(c) in fontes:
                                         fontes.remove( os.path.basename(c) )
-                                #shutil.copy(c, ".")
                 logger.info("cppcheck fontes {}".format(alvo))
                 # roda
                 logger.info("cppcheck em {}".format(fontes))
@@ -950,7 +964,6 @@ def principal():
                 texto += "- [{}](./{})\n".format(value.get("dir"), "{}.md".format(tx))
         texto += "\n"
         file_index.writelines(texto)
-        #file_index.writelines(html_footer)
         file_index.close()
 
 if __name__ == "__main__":
