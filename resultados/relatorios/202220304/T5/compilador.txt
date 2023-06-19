@@ -1,0 +1,4 @@
+t5.cpp: In function ‘int main()’:
+t5.cpp:25:13: warning: unused variable ‘num_caixas’ [-Wunused-variable]
+   25 |         int num_caixas = line.size();
+      |             ^~~~~~~~~~
