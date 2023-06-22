@@ -8,7 +8,7 @@
 
 **Prazo TDD: 22/06/2022 (Qui)** pelo link do GitHub [https://classroom.github.com/a/mRF0kHMt](https://classroom.github.com/a/mRF0kHMt).
 
-**Prazo Invaders (apresentação): 29/06/2022 (Qui)**
+**Prazo Invaders (apresentação): 13/07/2022 (Qui)**
 
 Se necessário, você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 
