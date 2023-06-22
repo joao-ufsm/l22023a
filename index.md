@@ -82,11 +82,11 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | - | 2022-06-08 Qui   | **Feriado** (Corpus Christi)  |
 | 24 | 2022-06-13 Ter   | T7 |
 | 25 | 2022-06-15 Qui   | T7 |
-| 26 | 2022-06-20 Ter   | T7 |
-| 27 | 2022-06-22 Qui   | Grafos ([não-direcionados](./aulas/23_grafos/41UndirectedGraphs.pdf), [direcionados](./aulas/23_grafos/42DirectedGraphs.pdf))  |
-| 28 | 2022-06-27 Ter   | Algoritmo de Dijkstra ([slides](aulas/23_grafos/44ShortestPaths.pdf), [demo](./aulas/23_grafos/44DemoDijkstra.pdf)) |
-| 29 | 2022-06-29 Qui   | **[T7 - Prazo de apresentação](./trabalhos/T7)** |
-| 30 | 2022-07-04 Ter   | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
+| 26 | 2022-06-20 Ter   | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
+| 27 | 2022-06-22 Qui   |   T7 |
+| 28 | 2022-06-27 Ter   | Grafos ([não-direcionados](./aulas/23_grafos/41UndirectedGraphs.pdf), [direcionados](./aulas/23_grafos/42DirectedGraphs.pdf))  |
+| 29 | 2022-06-29 Qui   | Algoritmo de Dijkstra ([slides](aulas/23_grafos/44ShortestPaths.pdf), [demo](./aulas/23_grafos/44DemoDijkstra.pdf)) |
+| 30 | 2022-07-13 Ter   | **[T7 - Prazo de apresentação](./trabalhos/T7)** |
 |  | 2022-07-06 Qui     |  [Smart pointers](./aulas/11_pointers/) |
 | - | 2022-07-11 Ter   | **Sem aula** (Sexta-feira)  |
 | - | 2022-07-13 Qui   | **Sem aula** (Sábado)  |
