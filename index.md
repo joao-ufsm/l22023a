@@ -42,9 +42,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 
 | Prazo | Peso | Asssunto   |
 |:---|----:|:------------------|
-|  | `1,0` | [T8 - Dijkstra](./trabalhos/T8) |
+|  **17/07/2023** | `1,0` | [T8 - Algoritmo de Dijkstra](./trabalhos/T8) |
 | **13/07/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 2) |
-| **22/06/2023** | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 1) |
+| ~~**22/06/2023**~~ | `3,0` | [T7 - AVL Invaders com TDD](./trabalhos/T7) (parte 1) |
 | ~~**25/05/2023**~~ | `2,0` | [T6 - Árvore Binária de Busca](./trabalhos/T6)  |
 | ~~**09/05/2023**~~ | `1,0` | [T5 - Logística de transporte](./trabalhos/T5) |
 | ~~**02/05/2023**~~ | `2,0` | [T4 - Previdência Simplificada](./trabalhos/T4) |
@@ -86,6 +86,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 27 | 2022-06-22 Qui   |   T7 |
 | 28 | 2022-06-27 Ter   | Grafos ([não-direcionados](./aulas/23_grafos/41UndirectedGraphs.pdf), [direcionados](./aulas/23_grafos/42DirectedGraphs.pdf))  |
 | 29 | 2022-06-29 Qui   | Algoritmo de Dijkstra ([slides](aulas/23_grafos/44ShortestPaths.pdf), [demo](./aulas/23_grafos/44DemoDijkstra.pdf)) |
+| - | 2022-06-29 Qui   | **[T8 - Algoritmo de Dijkstra](./trabalhos/T8)** |
 | 30 | 2022-07-13 Ter   | **[T7 - Prazo de apresentação](./trabalhos/T7)** |
 |  | 2022-07-06 Qui     |  [Smart pointers](./aulas/11_pointers/) |
 | - | 2022-07-11 Ter   | **Sem aula** (Sexta-feira)  |
