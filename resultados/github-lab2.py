@@ -36,7 +36,7 @@ trabalhos = {
         },
         "t2": {
                 "dir": "T2",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t2-grades-1681390867.csv",
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -60,7 +60,7 @@ trabalhos = {
         },
         "t4": {
                 "dir": "T4",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t4-grades-1682864320.csv",
                 "data": datetime(2023, 5, 2, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -72,7 +72,7 @@ trabalhos = {
         },
         "t5": {
                 "dir": "T5",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t5-grades-1683166930.csv",
                 "data": datetime(2023, 5, 9, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -97,7 +97,7 @@ trabalhos = {
         },
         "t7": {
                 "dir": "T7",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t7-grades-1687128436.csv",
                 "data": datetime(2023, 6, 22, 23, 55).astimezone(tz=None),
                 "testa": True,

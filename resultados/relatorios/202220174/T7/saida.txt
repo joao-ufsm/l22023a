@@ -1,21 +1,5 @@
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-a.out is a Catch v2.13.3 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-Caso DEL 0
--------------------------------------------------------------------------------
-arvore.cpp:106
-...............................................................................
-
-arvore.cpp:106: FAILED:
-due to a fatal error condition:
-  SIGSEGV - Segmentation violation signal
-
 ===============================================================================
-test cases: 8 | 7 passed | 1 failed
-assertions: 8 | 7 passed | 1 failed
+All tests passed (12 assertions in 12 test cases)
 
 
 ERRORS:
