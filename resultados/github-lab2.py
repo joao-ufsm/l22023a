@@ -25,7 +25,7 @@ geraComNomes = False
 trabalhos = {
         "t1": {
                 "dir": "T1",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t1-grades-1680578092.csv",
                 "data": datetime(2023, 4, 6, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -36,7 +36,7 @@ trabalhos = {
         },
         "t2": {
                 "dir": "T2",
-                "finalizado": True,
+                "finalizado": False,
                 "github": "t2-grades-1681390867.csv",
                 "data": datetime(2023, 4, 14, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -48,7 +48,7 @@ trabalhos = {
         },
         "t3": {
                 "dir": "T3",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t3-grades-1681819942.csv",
                 "data": datetime(2023, 4, 20, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -84,7 +84,7 @@ trabalhos = {
         },                                      
         "t6": {
                 "dir": "T6",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t6-grades-1684202711.csv",
                 "data": datetime(2023, 5, 25, 23, 55).astimezone(tz=None),
                 "testa": True,
