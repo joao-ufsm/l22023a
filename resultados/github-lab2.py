@@ -72,7 +72,7 @@ trabalhos = {
         },
         "t5": {
                 "dir": "T5",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t5-grades-1683166930.csv",
                 "data": datetime(2023, 5, 9, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -97,7 +97,7 @@ trabalhos = {
         },
         "t7": {
                 "dir": "T7",
-                "finalizado": False,
+                "finalizado": True,
                 "github": "t7-grades-1687128436.csv",
                 "data": datetime(2023, 6, 22, 23, 55).astimezone(tz=None),
                 "testa": True,
@@ -108,7 +108,21 @@ trabalhos = {
                 "valgrind": True,
                 "autoTeste" : True,
                 "cols": 8
-        }                 
+        },
+        "t8": {
+                "dir": "T8",
+                "finalizado": False,
+                "github": "t8-grades-1689078400.csv",
+                "data": datetime(2023, 7, 17, 23, 55).astimezone(tz=None),
+                "testa": True,
+                #"entrada": "teste1.in",
+                #"fonte": ["../../../entradas/t5/teste1.in"],
+                #"resposta": "./entradas/t5/teste1.out",
+                #"principal": ["../../../entradas/t7/arvore.cpp"],
+                "valgrind": True,
+                "autoTeste" : True,
+                "cols": 8
+        }                         
 }
 
 headers = {'Content-Type': 'application/json',

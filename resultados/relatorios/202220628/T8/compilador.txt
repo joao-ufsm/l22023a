@@ -1,0 +1,28 @@
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_0()’:
+dijkstra.cpp:178:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  178 |     g.dijkstra(1);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_2()’:
+dijkstra.cpp:190:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  190 |     g.dijkstra(1);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_4()’:
+dijkstra.cpp:206:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  206 |     g.dijkstra(1);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_6()’:
+dijkstra.cpp:217:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  217 |     g.dijkstra(5);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_8()’:
+dijkstra.cpp:227:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  227 |     g.dijkstra(4);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_10()’:
+dijkstra.cpp:237:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  237 |     g.dijkstra(10);
+      |       ^~~~~~~~
+dijkstra.cpp: In function ‘void C_A_T_C_H_T_E_S_T_12()’:
+dijkstra.cpp:248:7: error: ‘struct Grafo’ has no member named ‘dijkstra’
+  248 |     g.dijkstra(2);
+      |       ^~~~~~~~
