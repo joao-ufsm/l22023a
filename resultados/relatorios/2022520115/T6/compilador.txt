@@ -1,5 +1,20 @@
-/usr/bin/ld: /tmp/ccyh5aU8.o: na função "main":
-/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/catch.hpp:17540: múltiplas definições de "main"; /tmp/ccs03tza.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
-/usr/bin/ld: /tmp/ccpASVB8.o: na função "__gnu_cxx::new_allocator<int>::new_allocator()":
-/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/main.cpp:115: múltiplas definições de "main"; /tmp/ccs03tza.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
+arvore.cpp: In instantiation of ‘void Arvore<T>::inicia(std::__cxx11::list<T>&) [with T = int]’:
+arvore.cpp:118:19:   required from here
+arvore.cpp:39:12: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+   39 |       dado = NULL;
+      |            ^
+arvore.cpp: In instantiation of ‘bool Arvore<T>::vazio() [with T = int]’:
+arvore.cpp:119:3:   required from here
+arvore.cpp:78:14: warning: NULL used in arithmetic [-Wpointer-arith]
+   78 |     if (dado == NULL)
+      |              ^
+arvore.cpp: In instantiation of ‘void Arvore<T>::inicia(std::__cxx11::list<T>&) [with T = char]’:
+arvore.cpp:150:19:   required from here
+arvore.cpp:39:12: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   39 |       dado = NULL;
+      |            ^
+/usr/bin/ld: /tmp/ccdm7Jwg.o: na função "main":
+/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/catch.hpp:17540: múltiplas definições de "main"; /tmp/ccU3Q7id.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
+/usr/bin/ld: /tmp/ccvAxqIg.o: na função "__gnu_cxx::new_allocator<int>::new_allocator()":
+/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/main.cpp:115: múltiplas definições de "main"; /tmp/ccU3Q7id.o:/home/jvlima/UFSM/l22023a/resultados/download/T6/2022520115/professor.cpp:100: definido primeiro aqui
 collect2: error: ld returned 1 exit status
